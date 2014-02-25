@@ -11,7 +11,7 @@
               $('html, body').animate({
                 scrollTop: $("#asu_mobile_hdr").offset().top
               }, 1000);
-            }, 500);
+            }, 0);
             $this.data('clickNum', ++clickNum);
           }
         });
