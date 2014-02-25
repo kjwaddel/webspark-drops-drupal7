@@ -10,7 +10,7 @@
             setTimeout(function(){
               $('html, body').animate({
                 scrollTop: $("#asu_mobile_hdr").offset().top
-              }, 2000);
+              }, 1000);
             }, 500);
             $this.data('clickNum', ++clickNum);
           }
