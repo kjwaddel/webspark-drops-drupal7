@@ -8,9 +8,9 @@
           if (!clickNum) clickNum = 1;
           if (clickNum == 1) {
             setTimeout(function(){
-              //$("body, html").animate({
-                //scrollTop: $("#asu_mobile_hdr").offset().top
-                $(document).scrollTop();
+              $("body, html").animate({
+                scrollTop: $("#asu_mobile_hdr").offset().top
+                //$(document).scrollTop();
               }, 1000);
             }, 0);
             $this.data('clickNum', ++clickNum);
