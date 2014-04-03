@@ -8,7 +8,7 @@
           if (!clickNum) clickNum = 1;
           if (clickNum == 1) {
             setTimeout(function(){
-              $("document").animate({
+              $("body, html").animate({
                 scrollTop: $("#asu_mobile_hdr").offset().top
               }, 1000);
             }, 0);
