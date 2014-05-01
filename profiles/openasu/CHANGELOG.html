@@ -1,0 +1,470 @@
+<p>Changes since df0c1c97f9d5d216a0:</p>
+<ul>
+  <li>Update to Panopoly 1.5. Check out release notes for upgrade instructions and release notes: https://drupal.org/node/2255133</li>
+  <li>Update to Panopoly 1.4 and Drupal 7.27. Check out the release notes for upgrade instructions and a list of changes.   Panopoly 1.4: https://drupal.org/node/2248645   Drupal 7.27: https://drupal.org/drupal-7.27-release-notes</li>
+  <li>Updating to Panopoly 1.4 and Drupal 7.27 Check out the release notes for upgrade instructions and a list of changes. Panopoly 1.4:  https://drupal.org/node/2248645 Drupal 7.27: https://drupal.org/drupal-7.27-release-notes</li>
+  <li>Update to Drupal 7.27. Check out the release notes for upgrade instructions and a list of changes - https://drupal.org/drupal-7.27-release-notes.</li>
+  <li>Upgrade to Panopoly 1.4. Check out the release notes for upgrade instructions and a list of changes - https://drupal.org/node/2248645</li>
+  <li>Add function_exists for bulk_file_delete to prevent errors in local development environments</li>
+  <li>Fix Behat test on Travis-CI that started failing because of a Symfony regression. Fixes JIRA WEBSPARK-159. Authored by John Carroll. Related: https://travis-ci.org/ASU/webspark-drops-drupal7</li>
+  <li>Theme: Fixes Notice: undefined index: mlid in asu_webspark_bootstrap_links__system_main_menu line 234. Fixes WEBSPARK-136. Authored by Mike Pirog.</li>
+  <li>Drupal 7.27 release</li>
+  <li>Drupal 7.27</li>
+  <li>Merge pull request <a href="/node/37">#37</a> from pantheon-systems/bulkfiledelete</li>
+  <li>Pinned Symfony to ver.2.4.2. Fixes JIRA WEBSPARK-159</li>
+  <li>remove calls to pantheon_api_load_api, which only loads now deprecated functions</li>
+  <li>Call pantheon.php's pantheon_bulk_file_delete rather than drops-7 pantheon_api_bulk_file_delete</li>
+  <li>WEBSPARK-130: Testing upgrade to Panopoly 1.2</li>
+  <li>Merge pull request <a href="/node/7">#7</a> from ASU/86-implement-continuous-integration</li>
+  <li> Implement Continuous Integration. Fixes WEBSPARK-86.</li>
+  <li>Merge pull request <a href="/node/5">#5</a> from kjwaddel/news2</li>
+  <li>Merge pull request <a href="/node/3">#3</a> from kjwaddel/121</li>
+  <li>Merge pull request <a href="/node/6">#6</a> from ASU/14-transfer-repos</li>
+  <li>Updating make file to point to new repo locations</li>
+  <li>Updating content to use wysiwyg and removing dependency on menu.</li>
+  <li>WEBSPARK-129: Notice: Undefined offset: 0 in asu_webspark_bootstrap_links__system_main_menu()</li>
+  <li>WEBSPARK-127: First word site title styling improperly applied</li>
+  <li>WEBSPARK-128: Enable and disable logic for header image and frontpage path</li>
+  <li><a href="/node/1334818">#1334818</a> by pwaterz: #ajax does not work in install profiles</li>
+  <li>WEBSPARK-90: Set new ASU header on updates</li>
+  <li>Merge branch 'master' of https://github.com/pantheon-systems/drops-7</li>
+  <li>Adding webform module and editing .make file to include it in site spinup. Webspark-121</li>
+  <li>ASU Webspark RC3</li>
+  <li>Merge pull request <a href="/node/5">#5</a> from populist/remove-duplicate-panopoly</li>
+  <li>Removing the Panopoly Profile. Not necessary with WebSpark building same modules.</li>
+  <li>Drupal 7.26 - a security update recommended for all sites. Please see https://drupal.org/SA-CORE-2014-001 for details</li>
+  <li>Drupal 7.26</li>
+  <li>Merge pull request <a href="/node/35">#35</a> from pantheon-systems/7-25</li>
+  <li>Avoid permission conflicts in SFTP mode when checking site status.</li>
+  <li>Drupal 7.25 release, a maintenance release recommended for all sites. https://drupal.org/drupal-7.25-release-notes</li>
+  <li>Drupal 7.25</li>
+  <li>Fix broken function docblock in system.install.</li>
+  <li>Grammar consistency fix in CHANGELOG.txt.</li>
+  <li>Add standard information to CHANGELOG.txt in preparation for Drupal 7.25.</li>
+  <li>Added link to the change notification for the new Statistics module feature from issue <a href="/node/1209532">#1209532</a>.</li>
+  <li><a href="/node/2051787">#2051787</a> by milesw: Document that caches should be cleared after calling field_attach_update().</li>
+  <li><a href="/node/1876546">#1876546</a> by plopesc, Kevin Morse | joachim: Node_type_form_validate() and node_type_form_submit() pointlessly trim machine name value.</li>
+  <li><a href="/node/1182374">#1182374</a> by lyricnz, sivaji, brianV: Code style fixes for includes/filetransfer.</li>
+  <li><a href="/node/2117601">#2117601</a> by Alan D.: Namespaced Drupal\node\Node entity in node_revision_list() doc comment rather than node.</li>
+  <li><a href="/node/1146244">#1146244</a> by Dean Reilly, klausi, fago, firebird, David_Rothstein, aaronbauman, shenzhuxi, jaanhoinatski, themoep, citlacom: Node_access integrity constraint violation on module_invoke_all('node_' . $op, $node);.</li>
+  <li><a href="/node/1760330">#1760330</a> by s.Daniel, David_Rothstein, jfhovinne: Hide vulnerable drupal install.php sites from search engines.</li>
+  <li><a href="/node/805236">#805236</a> by merrillholt, ekl1773, marcingy, sun, catch: Cache the query in menu_local_tasks().</li>
+  <li><a href="/node/1252206">#1252206</a> by sivaji, droplet, kid_icarus, Bojhan: Remove checkbox spacing.</li>
+  <li><a href="/node/937284">#937284</a> by chx, chrisdolby, deviantintegral, Berdir, tim.plunkett | hefox: DEADLOCK errors on MergeQuery INSERT due to InnoDB gap locking when condition in SELECT ... FOR UPDATE results in 0 rows.</li>
+  <li><a href="/node/1201088">#1201088</a> by crazyrohila, pjcdawkins, eiriksm, Zgear, barbi | alxsvdr: Drupal_environment_initialize() passes wrong ini_set parameter.</li>
+  <li><a href="/node/1798066">#1798066</a> by boztek, dcam, larowlan | Anonymous: Clean up CommentTestBase::setCommentSettings().</li>
+  <li><a href="/node/1480734">#1480734</a> by kotnik: Useless require_once file in st().</li>
+  <li><a href="/node/1693336">#1693336</a> by chx, David_Rothstein, catch | iamEAP: Block rehashing happens on every cron run.</li>
+  <li><a href="/node/2136369">#2136369</a> by marvil07: Provide a way to avoid processing a queue during cron execution.</li>
+  <li><a href="/node/1076132">#1076132</a> by fizk, friesk, foxtrotcharlie, coolestdude1, David_Rothstein, skwashd, alexpott, tstoeckler | adaddinsane: Hook_block_view_MODULE_DELTA_alter fails with blocks that have a hyphen in the block delta.</li>
+  <li><a href="/node/1476810">#1476810</a> by Spleshka, David_Rothstein, franz | Heine: Drupal_serve_page_from_cache can serve uncompressed data with Content-Encoding gzip header with page_cache_without_database = 1.</li>
+  <li><a href="/node/2054205">#2054205</a> by pfrenssen, Berdir: Broken Tests on PHP 5.5.</li>
+  <li><a href="/node/2018791">#2018791</a> by droplet | gagarine: States.js is not compatible with jquery +1.6.1 because it use $.attr in the wrong way.</li>
+  <li><a href="/node/1563620">#1563620</a> by donquixote, David_Rothstein, chaby: Fix errors running unit tests in Drupal 7 when the Locale module is enabled.</li>
+  <li><a href="/node/1443158">#1443158</a> by agentrickard, Dave Reid, marcingy: File_field_presave assumes that a file object has been loaded.</li>
+  <li><a href="/node/1426122">#1426122</a> by deletedaccount, Alan D., andypost, maximpodorov: Some callbacks return junk when calling drupal_not_found(); replace with return MENU_NOT_FOUND instead.</li>
+  <li><a href="/node/2120461">#2120461</a> by amitsedaiz | joachim: Theme_status_report() uses an integer instead of a constant.</li>
+  <li><a href="/node/1841900">#1841900</a> by olli, herom, Sheldon Rampton: Node deletion should clear page cache.</li>
+  <li><a href="/node/2127835">#2127835</a> by zterry95: Fix code format in user.module.</li>
+  <li><a href="/node/1198904">#1198904</a> by das-peter, jox: Drupal_load_stylesheet() fails to load @import files in different directories.</li>
+  <li>Remove issue <a href="/node/1289336">#1289336</a> from CHANGELOG.txt for now, since it was causing test failures.</li>
+  <li>Revert "Issue <a href="/node/1289336">#1289336</a> by jthorson, JimmyAx, marcingy, no_commit_credit, rooby | janipuni: Calling node_view for the same node with multiple view modes on the same page does not correctly attach fields."</li>
+  <li><a href="/node/1269166">#1269166</a> by mgifford | hass: PRE tags (and other similar tags) have unreadable small font-size in Bartik.</li>
+  <li><a href="/node/2078917">#2078917</a> by sun: E-mails contain double spaces in soft-wrapped sentences.</li>
+  <li><a href="/node/1504522">#1504522</a> by rahulbile, Chi: Strict warning: Only variables should be passed by reference in update_results_page().</li>
+  <li>Add issue <a href="/node/1289336">#1289336</a> to CHANGELOG.txt.</li>
+  <li><a href="/node/1289336">#1289336</a> by jthorson, JimmyAx, marcingy, no_commit_credit, rooby | janipuni: Calling node_view for the same node with multiple view modes on the same page does not correctly attach fields.</li>
+  <li><a href="/node/2090207">#2090207</a> by helmo, davidhunter, Tor Arne Thune: Undefined property: stdClass::$visibility in profile_view_field().</li>
+  <li><a href="/node/1970588">#1970588</a> by Heine: SearchExcerptTestCase should be a DrupalWebTestCase.</li>
+  <li><a href="/node/2016497">#2016497</a> by naxoc, jhodgdon | plachance: Search query extender should not use floats directly.</li>
+  <li><a href="/node/1955378">#1955378</a> by skek, Darren Oh, claudiu.cristea, David_Rothstein: Return same derivative token with path or URI.</li>
+  <li><a href="/node/1993728">#1993728</a> by johnmcc, pfrenssen: TestMenuTreeData() assert message confuses dashes and underscores.</li>
+  <li><a href="/node/1209532">#1209532</a> by timmillwood, lucascaro, wiifm, iamEAP, sdrycroft, mikeytown2 | slashrsm: Count node views via AJAX in the statistics module.</li>
+  <li><a href="/node/813634">#813634</a> by jlscott, cafuego, Nitesh Sethia, claudinec, brianV: Node.language column should have an index.</li>
+  <li><a href="/node/2079315">#2079315</a> by mondrake: Image style editing leads to redundant watchdog entries.</li>
+  <li><a href="/node/1982020">#1982020</a> by Fabianx, FreekyMage, Cottser: Add static caching to drupal_html_class().</li>
+  <li><a href="/node/1996644">#1996644</a> by apkwilson, abghosh82 | joachim: User_login_name_validate() uses isset() where other user login form validation handlers use !empty().</li>
+  <li><a href="/node/2011918">#2011918</a> by jesse.d, Liam Morland, scor: Titles are often double-escaped (including in the content attribute of the dc:title meta element for nodes).</li>
+  <li><a href="/node/2040209">#2040209</a> by WebEvt: CSS is truncated when aggregation is turned on.</li>
+  <li><a href="/node/310315">#310315</a> by superspring, justafish, naxoc, Waltemath | fonant: drupal_wrap_mail() strips trailing blanks from standard hyphen-hyphen-space-newline e-mail signature separator.</li>
+  <li><a href="/node/2064667">#2064667</a> by kboopathi | Charles Belov: PHP Filter has a broken link to "Example PHP snippets" within help.</li>
+  <li><a href="/node/1414368">#1414368</a> by coolestdude1, Dave Reid: Drupal_http_request does not handle basic auth correctly when dealing with blank passwords.</li>
+  <li><a href="/node/1346098">#1346098</a> by benjy | joachim: Standard install profile sets a pointless $vocabulary->help.</li>
+  <li><a href="/node/1679660">#1679660</a> by rhm50, amontero, billk2, valthebald | bagvendt: Add link to cron tutorial on drupal.org.</li>
+  <li><a href="/node/1399798">#1399798</a> by nevergone, amateescu, chriscohen: Add a variable to allow the anonymous user object to not be a stdClass and to work around the fact that anonymous user properties are hardcoded.</li>
+  <li><a href="/node/2056363">#2056363</a> by yched, Sweetchuck, chx: INSERT INTO table SELECT * FROM ... not supported.</li>
+  <li><a href="/node/1815886">#1815886</a> by bojanz, slashrsm | torgosPizza: Change the database schema to allow Drupal core to manage files larger than 4 GB.</li>
+  <li>Added issue <a href="/node/2066275">#2066275</a> to CHANGELOG.txt.</li>
+  <li><a href="/node/1683794">#1683794</a> by JacobSanford, somepal, Caligan: Fix docs for user_block_user_action() function</li>
+  <li>ASU Webspark RC2</li>
+  <li>Merge pull request <a href="/node/34">#34</a> from pantheon-systems/drush-status</li>
+  <li>Update to 7.24 to correct a system status check for both web and CLI contexts.</li>
+  <li><a href="/node/1820086">#1820086</a> by gcassie: Remove mention of drupal_session_count() from inline documentation.</li>
+  <li>Update to Pantheon Apache Solr Integration</li>
+  <li><a href="/node/2145077">#2145077</a> by TR: Fix spelling errors in D7 tests and comments</li>
+  <li>Merged in Update to Drupal 7.24. Pantheon Apache Solr Improvements.</li>
+  <li>Update to 7.24 to correct a system status check.</li>
+  <li>Drupa 7.24 release, a security release recommended for all sites. https://drupal.org/drupal-7.24-release-notes</li>
+  <li>Drupal 7.24 - https://drupal.org/drupal-7.24-release-notes This is a security update. We recommend applying it as soon as feasible.</li>
+  <li>Merge tag '7.24' into 7.x</li>
+  <li>Drupal 7.24</li>
+  <li><a href="/node/2129867">#2129867</a> by ar-jan: Fix HTML formatting in drupal_add_js docs.</li>
+  <li><a href="/node/1665446">#1665446</a> by sivaji, kostajh, markpavlitski: Fix documentation for user_pass_rehash and related functions</li>
+  <li><a href="/node/2084535">#2084535</a> by sivaji, mErilainen, tankerjoe, DanielFbrg: Fix docs for file_copy</li>
+  <li>OpenASU 1.0 RC 1 Release</li>
+  <li><a href="/node/1947766">#1947766</a> by pfrenssen: Fix docs for user_page() function</li>
+  <li><a href="/node/332518">#332518</a> by diego21, joachim, chriscohen: Fix up documentation for system_settings_form().</li>
+  <li><a href="/node/1345654">#1345654</a> by diego21, joachim: Make sure hook_field_info tells you there are other needed hooks</li>
+  <li><a href="/node/1517032">#1517032</a> by damiankloip, covenantd: Fix search-result.tpl.php docs</li>
+  <li><a href="/node/2109957">#2109957</a> by ar-jan, joachim: Clarify docs for hook_field_schema()</li>
+  <li><a href="/node/2105237">#2105237</a> by StephaneQ: Remove innacurate line in stream wrapper class docs</li>
+  <li>Merge pull request <a href="/node/33">#33</a> from pantheon-systems/apachesolr_host</li>
+  <li>Moving solr index server host parameter into a global</li>
+  <li><a href="/node/2046677">#2046677</a> by drumm | tvn: Fixed Strict warning: Creating default object from empty value in template_preprocess_profile_listing().</li>
+  <li>Merge pull request <a href="/node/32">#32</a> from pantheon-systems/indexserver_connection</li>
+  <li>Re-enable verifypeer</li>
+  <li>Skip verifying the peer</li>
+  <li>Adding environment variables to set the index server connection information</li>
+  <li>Improve usability & functionality of Pantheon Apache Solr module, including status and debugging.</li>
+  <li><a href="/node/2078101">#2078101</a> by Xano: Update cpyright date</li>
+  <li><a href="/node/692366">#692366</a> by  mariacha1, hosef, Albert Volkman, xjm, underq, kid_icarus, willmoy, bradweikel: Replace US-centric php.net URLs with language-neutral URLs</li>
+  <li><a href="/node/2061275">#2061275</a> by StephaneQ, cconrad: Do not confuse hook_cron_queue_info with hook_cron in docs</li>
+  <li><a href="/node/2062399">#2062399</a> by kattekrab, Kartagis, effulgentsia, cafuego, Damien Tournoud, beejeebus, Dries, cweagans, webchick: Add Percona to list of supported MySQL-like databases</li>
+  <li>OpenASU 1.0 Beta 2 Release</li>
+  <li><a href="/node/1977054">#1977054</a> by ebargtuo, dooug: Make docs for language API callbacks match the code</li>
+  <li><a href="/node/2066275">#2066275</a> by Dave Reid: Fixed file_field_load() overwites any field item properties with file entity properties.</li>
+  <li>OpenASU 1.0 Beta 1 Release</li>
+  <li><a href="/node/2059785">#2059785</a> by kiamlaluno, longwave: Fix punctuation in field_view_field() docs</li>
+  <li><a href="/node/2062127">#2062127</a> by jlindsey15, joachim: Document system_requirements as implementation of hook_requirements</li>
+  <li><a href="/node/2061545">#2061545</a> by StephaneQ, rterrein: Add missing ampersand in sample hook_dashboard_regions_alter function body</li>
+  <li><a href="/node/2061843">#2061843</a> by TravisCarden: Clean up the docs for hook_schema</li>
+  <li><a href="/node/2044791">#2044791</a> by skipyT, alexandre.todorov, joachim: Clarify documentation of hook_block_view around empty return values</li>
+  <li><a href="/node/1967802">#1967802</a> by ebargtuo: Fix documentation of block view alter hooks</li>
+  <li><a href="/node/2059685">#2059685</a> by StephaneQ, Cottser: Remove t() from test assertion messages in dashboard module</li>
+  <li><a href="/node/2059687">#2059687</a> by StephaneQ, Cottser: Remove t() from test assertion messages in blog module</li>
+  <li><a href="/node/2059689">#2059689</a> by StephaneQ, dcam: Remove t() from test assertion messages in profile module</li>
+  <li><a href="/node/2059691">#2059691</a> by StephaneQ, dcam: Remove t() from test assertion messages in trigger module</li>
+  <li>Drupal 7.23 release. You need to explicitly clear caches in the Drupal admin UI after applying.</li>
+  <li>Merge tag '7.23' of http://git.drupal.org/project/drupal into 7.23</li>
+  <li>Back to 7.x-dev</li>
+  <li>Drupal 7.23</li>
+  <li><a href="/node/1871028">#1871028</a> by freblasty, das-peter: Fix up documentation of cache clear function and method</li>
+  <li><a href="/node/1797364">#1797364</a> by dcam, David_Rothstein: Restore t() on button name in locale test</li>
+  <li>Add standard information to CHANGELOG.txt in preparation for Drupal 7.23.</li>
+  <li>Added link to image style label change notification to CHANGELOG.txt.</li>
+  <li><a href="/node/1797364">#1797364</a> by dcam, xjm, Lars Toomre, neetu morwani, lazysoundsystem: Remove t() from assertion messages in tests for the locale module.</li>
+  <li><a href="/node/1201024">#1201024</a> by pillarsdotnet, jbrown, tim.plunkett | Damien Tournoud: drupal_realpath() should describe when it should be used.</li>
+  <li>Fixed tense in CHANGELOG.txt.</li>
+  <li><a href="/node/1759144">#1759144</a> by rondp, Josh Waihi, jweowu, David_Rothstein | plachance: Fixed taxonomy_update_7005 on pgsql returns error 'column 'td' of relation 'taxonomy_update_7005' does not exist'.</li>
+  <li><a href="/node/2028643">#2028643</a> by hass, tstoeckler: Fixed CSS files order is incorrect in RTL.</li>
+  <li><a href="/node/1453984">#1453984</a> by xjm, naxoc, Dave Reid, underq, dags, tim.plunkett, Heine: Fixed Color module doesn't test for unlimited memory.</li>
+  <li><a href="/node/1041580">#1041580</a> by Monochrome, daycrom, dcam | RumpledElf: Fixed Favicon.ico 404s on IIS.</li>
+  <li><a href="/node/2026269">#2026269</a> by Spleshka: Fixed Different default values for filter_allowed_protocols() variable.</li>
+  <li><a href="/node/2026263">#2026263</a> by Spleshka: Fixed Wrong default value for 'user_pictures' variable.</li>
+  <li><a href="/node/1586166">#1586166</a> by drumm, David_Rothstein: Fixed system_update_7013() and user_update_7002() should not call l().</li>
+  <li><a href="/node/1956914">#1956914</a> by pounard, David_Rothstein, chaby: Use a single cache_get_multiple() call per region instead of a cache_get() per block in _block_render_blocks().</li>
+  <li><a href="/node/1860876">#1860876</a> by pounard: Fixed module_implements_write_cache() should not drop caches when requesting with POST method.</li>
+  <li><a href="/node/1839998">#1839998</a> by wiifm, mcm.guaba, Josh Waihi, dcam: Fixed TruncateQuery implemented as 'DELETE FROM' in MySQL and SQLite, but not PostgreSQL, causing nefarious table locking.</li>
+  <li><a href="/node/1216776">#1216776</a> by illmasterc, Niklas Fiekas, dawehner: Fixed Two nested contextual links regions are active, when the outer region is hovered.</li>
+  <li><a href="/node/1928690">#1928690</a> by ovidyou | yark: Fixed Search block template: Undefined index: #type.</li>
+  <li><a href="/node/1057656">#1057656</a> by mondrake, chx | adrinux: Fixed Image styles don't flush for images stored non-default schemes.</li>
+  <li><a href="/node/1392852">#1392852</a> by Shawn DeArmond, bulldozer2003 | davidwbarratt: Fixed User registration form field displays when user field is locked accompanied by error message.</li>
+  <li><a href="/node/2011436">#2011436</a> by kalman.hosszu: Fixed line indent in dashboard.js.</li>
+  <li><a href="/node/2011822">#2011822</a> by pdrake: Fixed Trigger content (node) actions test assumes auto-increment increment of 1.</li>
+  <li><a href="/node/2011780">#2011780</a> by pdrake: Fixed Taxonomy vocabulary interface test assumes auto-increment increment of 1.</li>
+  <li><a href="/node/1943282">#1943282</a> by RobLoach, eporama: Fixed User Account Links Tests assumes certain menu link IDs.</li>
+  <li><a href="/node/1975442">#1975442</a> by thedavidmeister, dcam: Fixed drupal_render() should always return a string.</li>
+  <li><a href="/node/238250">#238250</a> by markpavlitski | Xano: Fixed cache_clear_all()('*', 'block', TRUE); will TRUNCATE the {block} table without additional checks.</li>
+  <li><a href="/node/670454">#670454</a> by pwolanin, cburschka, effulgentsia: Support HTTP Authorization in CGI environments.</li>
+  <li><a href="/node/1813966">#1813966</a> by Sylvain Lecoy: Remove __construct() from interfaces definition.</li>
+  <li><a href="/node/1952196">#1952196</a> by greggles, sandhya.m: Usability: if a user has just failed a login, default their username on password reset.</li>
+  <li><a href="/node/1959110">#1959110</a> by a.ross, fietserwin, markabur: Fixed theme_table() outputs the 'no_striping' option as an HTML attribute.</li>
+  <li><a href="/node/1575060">#1575060</a> followup by SebCorbin, andypost: Second attempt to fix broken ajax_html_ids for forms with file element (encoding=multipart/form-data).</li>
+  <li><a href="/node/1416506">#1416506</a> by yched, Damien Tournoud, swentel: Fixed Field schema foreign keys support is broken.</li>
+  <li><a href="/node/2055019">#2055019</a> by colan: Fixed Syslog configure link missing on Extend/Modules page.</li>
+  <li>Clean up variables to remove legacy search_api_solr variables.</li>
+  <li>Use a variable to store the search_api_solr service class which defaults to the Pantheon service class.</li>
+  <li><a href="/node/2031319">#2031319</a> by jlindsey15, pplantinga, thedavidmeister, Kingdutch, Kiphaas7: Document that theme() should really be called via drupal_render().</li>
+  <li><a href="/node/1034828">#1034828</a> by Steven Jones, Bladedu, brunodbo | Rob C: Fixed 'No active batch' error after user cancelling own account.</li>
+  <li><a href="/node/1305814">#1305814</a> by elachlan, giammi, TonyK, mdupont: Fix up hook_exit() docs accuracy</li>
+  <li><a href="/node/1365234">#1365234</a> by TravisCarden, amontero, Kevin Morse, bartmcpherson, xjm: Add description to 'access content overview' permission.</li>
+  <li>OpenASU 1.0 Alpha 8 Release</li>
+  <li><a href="/node/2038059">#2038059</a> by Elijah Lynn, longwave, aaronott: Fix grammar in bootstrap.inc docs</li>
+  <li>OpenASU 1.0 Alpha 7 Release</li>
+  <li><a href="/node/2038629">#2038629</a> by sambonner: Fix first line docs for drupal_goto().</li>
+  <li><a href="/node/1797120">#1797120</a> by dcam, lazysoundsystem, Lars Toomre, xjm: Remove t() from test asserts in various system tests</li>
+  <li><a href="/node/1797914">#1797914</a> by lazysoundsystem, dcam, izus, Lars Toomre: Remove t() from test assertions in various system tests</li>
+  <li><a href="/node/2033151">#2033151</a> by mavimo, longwave: Fix typo in field.api.php API docs</li>
+  <li><a href="/node/2002182">#2002182</a> by w00zle: Convert hook_filter_info docs to use new callback function standard</li>
+  <li><a href="/node/2027351">#2027351</a> by micnap, longwave, helenkim: Fix up grammar and awkward parens in API docs in menu.inc</li>
+  <li><a href="/node/1797252">#1797252</a> by dcam,  lazysoundsystem, pwieck, andypost, Lars Toomre, xjm: Remove t() from test assertions in file-related tests</li>
+  <li><a href="/node/2028599">#2028599</a> by maximpodorov, andypost: Remove extra spaces in field.install</li>
+  <li><a href="/node/1850798">#1850798</a> by damiankloip, ACF, geerlingguy, pfrenssen, David_Rothstein | mvc: Add a recursive version of array_diff_assoc().</li>
+  <li><a href="/node/606598">#606598</a> by andypost, BarisW, stBorchert, David_Rothstein, sun, aspilicious, joachim, danielbeeke2, Sutharsan: Added human readable labels to image styles.</li>
+  <li><a href="/node/1797286">#1797286</a> by dcam, lazysoundsystem, xjm, Lars Toomre: Remove t() from test assertions in forum module</li>
+  <li><a href="/node/1831540">#1831540</a> by orb, sergeypavlenko, Berdir, andypost, podarok, cam8001, Gaelan: Rewrite examples for taxonomy hooks in taxonomy.api.php</li>
+  <li><a href="/node/1797330">#1797330</a> by xjm, Lars Toomre, dcam, lazysoundsystem: Remove t() from test assertions in help module</li>
+  <li><a href="/node/1797508">#1797508</a> by Lars Toomre, dcam, lazysoundsystem: Remove t() from test messages in search module</li>
+  <li><a href="/node/1540094">#1540094</a> by bdgreen, xjm, rootwork, dermario, killtheliterate, pesgyo, Noe_: Fix up documentation of node tests</li>
+  <li><a href="/node/1797372">#1797372</a> by chrisjlee, lazysoundsystem, dcam, xjm, Lars Toomre: Remove t() from test assertions in path module</li>
+  <li><a href="/node/1797510">#1797510</a> by Lars Toomre, xjm, lazysoundsystem, dcam: Remove t() from test assertions in shortcut module</li>
+  <li><a href="/node/1797366">#1797366</a> by Lars Toomre, lazysoundsystem, dcam: Remove t() from test assertions in translation module</li>
+  <li><a href="/node/1797366">#1797366</a> by xjm, lazysoundsystem, dcam: Remove t() from test assertions in menu module</li>
+  <li><a href="/node/2012898">#2012898</a> by mcjim: Trivial Patch of the Month candidate: Fix indefinite article in book.module documentation</li>
+  <li><a href="/node/1948564">#1948564</a> by sarahdavies, bdgreen, joachim: Move search callback function out of hooks group and into callbacks group in search.api.php</li>
+  <li><a href="/node/839634">#839634</a> by aaronott, jhodgdon, drunken monkey, rocket_nova, Berdir: Make documentation for table sorting match what the code does</li>
+  <li><a href="/node/1797200">#1797200</a> by dcam, K.MacKenzie, Lars Toomre, xjm: Remove t() from test assertions in node.module tests</li>
+  <li><a href="/node/1811520">#1811520</a> by JacobSanford, lirantal: Add section tags to theme, hook_menu, and t documentation.</li>
+  <li><a href="/node/2000140">#2000140</a> by sarahdavies: Remove stray text in callbacks topic docblock</li>
+  <li>Revert "Issue <a href="/node/1956914">#1956914</a> by chaby, pounard: Use a single cache_get_multiple() call per region instead of a cache_get() per block in _block_render_blocks()."</li>
+  <li><a href="/node/787876">#787876</a> by David_Rothstein, zero2one, dcam | avior: Added code comment to clarify why the "autocomplete" attribute is used on the current password field on the user form.</li>
+  <li><a href="/node/1739986">#1739986</a> by RobLoach, pwolanin, sun, Berdir, moshe weitzman, andypost, dcam: Fixed fallback in drupal_get_hash_salt(), move it to bootstrap.inc, use instead of $GLOBALS['drupal_hash_salt()'].</li>
+  <li><a href="/node/1956914">#1956914</a> by chaby, pounard: Use a single cache_get_multiple() call per region instead of a cache_get() per block in _block_render_blocks().</li>
+  <li><a href="/node/1798366">#1798366</a> by dcam, cilefen, Lars Toomre: Remove t() from test asserts in Tracker module</li>
+  <li><a href="/node/1797374">#1797374</a> by dcam, lazysoundsystem, xjm, Lars Toomre, Mile23: Remove t() from test assertions in PHP module</li>
+  <li><a href="/node/1798384">#1798384</a> by dcam, Lars Toomre, Mile23: Remove t() from test assertions in Update module</li>
+  <li><a href="/node/1948564">#1948564</a> by bdgreen, aitiba, joachim: Document hook_search_info() callback using new callback definition standard</li>
+  <li><a href="/node/1797452">#1797452</a> by dcam, izus, xjm, Lars Toomre: Remove t() from test asserts in various system tests</li>
+  <li>Support for Search API Solr 1.0</li>
+  <li><a href="/node/1980072">#1980072</a> by  David_Rothstein: Fix inaccurate text in documentation for drupal_uninstall_modules</li>
+  <li><a href="/node/1204784">#1204784</a> by bdgreen, Kevin Morse, valthebald, kiamlaluno, droplet: Fix code comment in drupal_retrieve_form</li>
+  <li><a href="/node/1980072">#1980072</a> by TravisCarden: Improve documentation of drupal_uninstall_modules</li>
+  <li><a href="/node/1984190">#1984190</a> by markpavlitski: Fix bullet list formatting in hook_install_tasks doc</li>
+  <li><a href="/node/1966958">#1966958</a> by markpavlitski, joachim: Add param docs to user_login_finalize</li>
+  <li><a href="/node/1797410">#1797410</a> by dcam, izus, Lars Toomre: Remove t() from test asserts in misc system tests</li>
+  <li><a href="/node/1797920">#1797920</a> by dcam, izus, Lars Toomre: Remove t() from test asserts in misc system tests</li>
+  <li><a href="/node/1797926">#1797926</a> by dcam, izus, Lars Toomre: Remove t() from test asserts in misc system tests</li>
+  <li><a href="/node/1797318">#1797318</a> by dcam, izus, xjm, Lars Toomre: Remove t() from test asserts in form system tests</li>
+  <li><a href="/node/1797296">#1797296</a> by dcam, izus, xjm, Lars Toomre: Remove t() from test asserts in file system tests</li>
+  <li><a href="/node/1797220">#1797220</a> by dcam, izus, xjm, Lars Toomre: Remove t() from test asserts in entity system tests</li>
+  <li><a href="/node/1797360">#1797360</a> by dcam, izus, xjm, Lars Toomre: Remove t() from test asserts in locale and path module backported from D8 language module</li>
+  <li><a href="/node/1742830">#1742830</a> by dcam, izus, lazysoundsystem, andypost, Lars Toomre: Remove t() from test asserts in contact module</li>
+  <li><a href="/node/1797106">#1797106</a> by dcam, izus, xjm, lazysoundsystem, zuuperman, Lars Toomre: Remove t() from test asserts in field module</li>
+  <li><a href="/node/1797272">#1797272</a> by dcam, izus, xjm, Lars Toomre: Remove t() from test asserts in filter module</li>
+  <li><a href="/node/1797328">#1797328</a> by dcam, izus, xjm, Lars Toomre: Remove t() from test asserts in image module</li>
+  <li><a href="/node/1936166">#1936166</a> by markpavlitski: Add information on passing args by reference to module_invoke functions doc</li>
+  <li><a href="/node/1786740">#1786740</a> by shanethehat: Fix up docs for field_update_instance()</li>
+  <li><a href="/node/1797242">#1797242</a> by xjm, dcam, Lars Toomre, izus: Remove t() from assert messages in xmlrpc module</li>
+  <li><a href="/node/1797242">#1797242</a> by xjm, dcam, Lars Toomre, izus: Remove t() from assert messages in field_ui module</li>
+  <li><a href="/node/1797242">#1797242</a> by dcam, Lars Toomre, izus: Remove t() from assert messages in user module</li>
+  <li><a href="/node/1797242">#1797242</a> by dcam, lazysoundsystem, xjm, Lars Toomre, izus: Remove t() from assert messages in dblog module</li>
+  <li>Added issue <a href="/node/1962780">#1962780</a> to CHANGELOG.txt.</li>
+  <li><a href="/node/1973762">#1973762</a> by chx, cosmicdreams, yched: Add example to field_info_field_map return docs</li>
+  <li>Merge branch 'master' of git://github.com/populist/panopoly-drops-7</li>
+  <li>Updating to Panopoly Release Candidate 4. Check out the release notes for upgrade instructions and a list of changes - http://drupal.org/node/1976726</li>
+  <li>Merge branch 'master' of git://github.com/pantheon-systems/drops-7</li>
+  <li>Merge pull request <a href="/node/22">#22</a> from fluxsauce/master</li>
+  <li><a href="/node/1614108">#1614108</a> by David_Rothstein: Remove documentation of visible in hook_field_extra_fields, since it does not exist (yet) in D7</li>
+  <li>Updating pantheon_apachesolr to report index size, implement getSolrVersion.</li>
+  <li><a href="/node/1966948">#1966948</a> by kiamlaluno: Upate reference to Drupal 6 hook in user_login_finalize</li>
+  <li>Added change notification for issue <a href="/node/1727430">#1727430</a> to the Drupal 7.22 section in CHANGELOG.txt.</li>
+  <li><a href="/node/1963206">#1963206</a> by fgm: Add hook_schema_alter to scheamapi topic</li>
+  <li><a href="/node/1961832">#1961832</a> by foopang: Fix docs typo in field_ui.admin.inc</li>
+  <li><a href="/node/1614108">#1614108</a> by dcam, bartmcpherson, Xano: Add documentation to hook_field_extra_fields</li>
+  <li><a href="/node/1173322">#1173322</a> by dcam,  javier_: Add example implementations for file hook documentation</li>
+  <li><a href="/node/1964824">#1964824</a> by chrisjlee: Fix typo in code comment</li>
+  <li><a href="/node/1250500">#1250500</a> by dcam, joachim, jhodgdon: Add topic for callback functions</li>
+  <li><a href="/node/1811218">#1811218</a> by chertzog, dozymoe, rootatwc: Fix args in hook_aggregator_process_info docs</li>
+  <li><a href="/node/1958578">#1958578</a> by chertzog: Fix see reference to nonexistent function</li>
+  <li><a href="/node/1797940">#1797940</a> by dcam, Lars Toomre: Add missing docs in locale test method</li>
+  <li><a href="/node/1962780">#1962780</a> by David_Rothstein, petyovsky: Fixed 500 Internal server error on Apache 1.x servers after updating to Drupal 7.22.</li>
+  <li>OpenASU 1.0 Alpha 6 Release</li>
+  <li><a href="/node/1906484">#1906484</a> by dcam, smiletrl: Fix incorrect reference in field_ui_field_setting_form_submit() documentation</li>
+  <li><a href="/node/1943664">#1943664</a> by joachim: Use new standards to document entity info callback functions</li>
+  <li><a href="/node/1933954">#1933954</a> by Alexander Pyle: Fix up documentation for return value of hook_requirements</li>
+  <li>Drupal version 7.22, a maintenance release recommended for all sites: http://drupal.org/drupal-7.22</li>
+  <li>return to core's way of doing image_get_info()</li>
+  <li>Merge branch 'master' of github.com:pantheon-systems/drops-7 into 7.22</li>
+  <li>Merge branch 'master' of git://github.com/gbaudoin/drops-7 into 7.22</li>
+  <li>Merge branch 'patch-1' of git://github.com/JohnAlbin/drops-7 into 7.22</li>
+  <li>Merge pull request <a href="/node/20">#20</a> from pantheon-systems/apachesolr-permissions</li>
+  <li>Merge branch 'master' of github.com:pressflow/7 into 7.22</li>
+  <li>Merge pull request <a href="/node/30">#30</a> from pressflow/drupal-7.22</li>
+  <li>Merge tag '7.22' of http://git.drupal.org/project/drupal into drupal-7.22</li>
+  <li>Drupal 7.22</li>
+  <li>Updating permissions for Pantheon Apachesolr module to not rely directly on Search module.</li>
+  <li>Add standard information to CHANGELOG.txt in preparation for Drupal 7.22.</li>
+  <li><a href="/node/1821906">#1821906</a> followup by David_Rothstein: Validate that the new $options parameter in various Field API public API functions is actually an array, to prevent conflicts with contrib modules.</li>
+  <li><a href="/node/1664784">#1664784</a> by effulgentsia, mikeytown2: Allow drupal_http_request() to be overridden.</li>
+  <li><a href="/node/1693398">#1693398</a> by donquixote, pounard, sun, Sylvain Lecoy: Allow PSR-0 test classes to be used in D7.</li>
+  <li><a href="/node/1952354">#1952354</a> by robertcharlesfox | laurence_m: Fixed Typo in drupal_add_html_head() API doc.</li>
+  <li><a href="/node/1797506">#1797506</a> by dcam, xjm, Lars Toomre, sivaji: Remove t() from assertion messages in tests for the rdf module.</li>
+  <li><a href="/node/1945066">#1945066</a> by chertzog, dcam | joachim: Fixed node_theme() doesn't declare the file for theme_node_admin_overview() .</li>
+  <li><a href="/node/1049050">#1049050</a> by mfb, TwoD, David_Rothstein, jpsoto: Removed dead code in file_stream_wrapper_uri_normalize().</li>
+  <li><a href="/node/946118">#946118</a> by droplet, lyricnz, dcam | rvilar: Fixed The machine name isn't updating correctly when the user selects a previous input value.</li>
+  <li><a href="/node/799356">#799356</a> by vijaycs85, m1n0, jaffaralia, effulgentsia: Fixed _form_set_class() is too aggressive in assigning the 'error' class.</li>
+  <li><a href="/node/1575060">#1575060</a> by Spleshka, andypost, serm, mcjim, nod_: Fixed ajax_html_ids() are broken for forms with file element (encoding=multipart/form-data).</li>
+  <li><a href="/node/1728122">#1728122</a> by rymo | HonoredMule: Fixed Sticky Table header tables don't inherit parent table's outer width.</li>
+  <li><a href="/node/1229014">#1229014</a> by bfroehle, jackbravo, illmasterc: Fixed Content-Disposition header makes private files show open/save prompts, but public files show inline.</li>
+  <li>OpenASU 1.0 Alpha 5 Release</li>
+  <li>Small wording change in CHANGELOG.txt.</li>
+  <li><a href="/node/1821906">#1821906</a> by Wim Leers, nod_: Allow more Field API public API functions to act on a single field within an entity.</li>
+  <li><a href="/node/985642">#985642</a> by kiamlaluno, Berdir, Damien Tournoud, Deciphered, B-Prod, galooph, David_Rothstein, drzraf, yched: Add back field_attach_load() to file_field_update() under certain circumstances in Drupal 7.</li>
+  <li><a href="/node/124689">#124689</a> by cck | Dio: Fixed hook_user()/hook_user_presave() documentation needs clarification on how to modify values.</li>
+  <li>Fix typo in CHANGELOG.txt.</li>
+  <li><a href="/node/1915088">#1915088</a> by openminds, bfroehle: Fixed SkipDotsRecursiveDirectoryIterator not skipping dot-files when they are the first entry.</li>
+  <li><a href="/node/1937860">#1937860</a> by mikeytown2: Fixed seven_css_alter() does not set the type.</li>
+  <li><a href="/node/1940404">#1940404</a> by danpros: Fix URL typo in PHP module filter tips.</li>
+  <li><a href="/node/1096208">#1096208</a> by zambrey, mr.baileys: Fixed PHP notices when creating menu link '#'.</li>
+  <li><a href="/node/1564996">#1564996</a> by greggles: Added Make one-time login link watchdog more useful for auditing.</li>
+  <li><a href="/node/1705536">#1705536</a> by pfrenssen: Fixed typo in docblock block_block_list_alter().</li>
+  <li><a href="/node/1716036">#1716036</a> by larowlan, xjm: Use range() to create option list for forum block options.</li>
+  <li><a href="/node/1886876">#1886876</a> by IRuslan, swentel: Fixed Useless variable assignment in node_feed().</li>
+  <li><a href="/node/1723828">#1723828</a> by hass: Fixed incorrect log message when theme() is called for a theme hook that does not exist.</li>
+  <li><a href="/node/1648004">#1648004</a> by dcam, Devin Carlson, Rob Loach: Removed inaccurate code comment about using l() in update_helpful_links().</li>
+  <li><a href="/node/1035292">#1035292</a> by Désiré, vijaycs85, wizonesolutions, oriol_e9g, ACF, achton, darkadept: Fixed Dynamic tokens can't have spaces.</li>
+  <li><a href="/node/1901476">#1901476</a> by caiosba | mstef: Fixed Uncaught TypeError: Cannot read property 'command' of undefined in ajax.js.</li>
+  <li><a href="/node/1242602">#1242602</a> by swentel, JvE, babruix | Chi: Fixed Notices in taxonomy_autocomplete().</li>
+  <li><a href="/node/771036">#771036</a> by ojohansson, Albert Volkman, Gábor Hojtsy: Fixed Overlay overwrites existing target attribute.</li>
+  <li><a href="/node/1429442">#1429442</a> by Jody Lynn, mathankumarc, gnuget, nrambeck, dcam | sun: Fixed Access denied page shown after submitting form that creates a unpublished node.</li>
+  <li><a href="/node/1605040">#1605040</a> by TravisCarden, mitron | EdgarPE: Fixed drupal_send_headers() ignores headers with valid but falsy values.</li>
+  <li><a href="/node/1907704">#1907704</a> by acrollet, ultimateboy, totten: Restrict temporary files created by text editors.</li>
+  <li><a href="/node/1379056">#1379056</a> by Barrett: Fixed if more than one hook_openid() implementation returns a given parameter, the resulting value is an array and request is invalid.</li>
+  <li><a href="/node/1926758">#1926758</a> by balsama, mitron: Fix code comment in system.module</li>
+  <li>OpenASU 1.0 Alpha 4 Release</li>
+  <li><a href="/node/1797514">#1797514</a> by disasm, dicam, Gaelan, Lars Toomre: Remove t() from test assert messages in simpletest module</li>
+  <li><a href="/node/1884840">#1884840</a> by Pix, pwolanin: Remove reference to md5 in ajax code comments</li>
+  <li><a href="/node/1920340">#1920340</a> by yched: Fixed Update URL of change notification for '_field_info_collate_fields() memory usage'.</li>
+  <li><a href="/node/1324058">#1324058</a> by isay, barraponto, shameemkm: Fixed forum-rtl.css does not overide #forum div.indent from margin-left to margin-right.</li>
+  <li><a href="/node/1886812">#1886812</a> by kiamlaluno: theme_form_element() initialize a variable that is never used.</li>
+  <li><a href="/node/1215404">#1215404</a> by brianV, pillarsdotnet: Fixed Remove assignment to unused variable $export_data from book_export_html() function.</li>
+  <li><a href="/node/1886796">#1886796</a> by kiamlaluno: Fixed theme_checkbox() initialize a variable that is never used.</li>
+  <li><a href="/node/1886870">#1886870</a> by IRuslan: Fixed Useless node_type_get_type() call in node_validate().</li>
+  <li><a href="/node/1848774">#1848774</a> by IshaDakota, kiamlaluno: Fixed search_view() initializes a variable that is never used.</li>
+  <li><a href="/node/1898314">#1898314</a> by droplet | xjm: Rename $user to $account in WebTestBase::drupalLogin().</li>
+  <li><a href="/node/1751054">#1751054</a> by borisbaldinger, Berdir, vomiand: Fixed serious documentation problem with the $name variable in taxonomy-term.tpl.php (incorrectly documented as being sanitized when in fact it is not).</li>
+  <li><a href="/node/1586542">#1586542</a> followup by andypost: Workaround for an issue where system update <a href="/node/7061">#7061</a> fails due to a memory leak and can't be run again.</li>
+  <li><a href="/node/1475342">#1475342</a> by iamEAP | Kasper Souren: Fixed D6->D7 upgrade: system_update_7007() fail.</li>
+  <li><a href="/node/1827136">#1827136</a> by amatzies, patrickd, posulliv | earnie: Add severity index to watchdog table.</li>
+  <li><a href="/node/1848464">#1848464</a> by scor | jneubert: Fixed Make RDFa markup upward compatible with RDFa 1.1.</li>
+  <li>OpenASU 1.0 Alpha 3 Release</li>
+  <li>Update to Drupal 7.21 - maintenance release focusing on users impacted by the image derivative changes in 7.20. For more information see:</li>
+  <li>Merge branch 'drupal-7.21'</li>
+  <li>Merge tag 'tags/7.21' into drupal-7.21</li>
+  <li>Merge branch '7.20-hotfix' into 7.x</li>
+  <li>Prepare Drupal 7.21 release.</li>
+  <li><a href="/node/1934568">#1934568</a> by David_Rothstein, pwolanin: Allow sites using the 'image_allow_insecure_derivatives' variable to have partial protection from the security issues fixed in Drupal 7.20.</li>
+  <li>OpenASU 1.0 Alpha 2 Release</li>
+  <li><a href="/node/1890754">#1890754</a> by Berdir, pwolanin, tim.plunkett: [Tests] Private Images visible by url.</li>
+  <li><a href="/node/1932354">#1932354</a> by Alexander Pyle: Fix up documentation for image_scale()</li>
+  <li><a href="/node/1916928">#1916928</a> by Alexander Pyle, YesCT, twistor: Document that clickLink is case sensitive</li>
+  <li><a href="/node/1347914">#1347914</a> by Albert Volkman, Lars Toomre, batigolix, NROTC_Webmaster, xjm, sven.lauer: Fix up API docs for Filter module</li>
+  <li><a href="/node/1923554">#1923554</a> by David_Rothstein, pwolanin, mitron | alfaguru: Fixed New anti-DoS measure breaks for some file URIs.</li>
+  <li><a href="/node/1266572">#1266572</a> by znerol, joshf: Fixed Workaround in UpdateQuery_sqlite() for affected rows count causes certain updates to be suppressed.</li>
+  <li><a href="/node/1012620">#1012620</a> by Berdir, kbasarab, YesCT: Fixed Unique key on date_formats().(format|type) is problematic for case insensitive collations.</li>
+  <li><a href="/node/1792380">#1792380</a> by theo_: Fixed DatabaseCondition not cloning SelectQuery value object.</li>
+  <li><a href="/node/1794012">#1794012</a> by dcam, Crell,  Lars Toomre: Remove t() from asserts in database system tests</li>
+  <li>Update modules/pantheon/pantheon_apachesolr/pantheon_apachesolr.info</li>
+  <li>Drupal 7.20 release. This contains security fixes and should be applied by all users.</li>
+  <li>Fixing comment typo.</li>
+  <li>Add hook_js_cache_alter().</li>
+  <li>Merge branch 'drupal-7.20'</li>
+  <li>Merge tag 'refs/tags/7.20' into drupal-7.20</li>
+  <li>Merge tag '7.20' into 7.x</li>
+  <li>Drupal 7.20</li>
+  <li><a href="/node/1908192">#1908192</a> by mitron: Document what happens in drupal_get_filename() if the file is not found</li>
+  <li><a href="/node/1908194">#1908194</a> by  richard.c.allen2386: Document what happens in drupal_get_path if the file is not found</li>
+  <li>Version numbers FTW</li>
+  <li><a href="/node/1889738">#1889738</a> by andybroomfield: Add information to documentation of hook_custom_theme</li>
+  <li><a href="/node/1397346">#1397346</a> by Albert Volkman, kristiaanvandeneynde, larowlan, bobbyaldol, tim-e, shiff2kl, FatGuyLaughing: Add and fix up documentation in image and node module files</li>
+  <li><a href="/node/1885000">#1885000</a> by cck: Add link in hook_theme docs to theme layer page</li>
+  <li>Add issue <a href="/node/1879022">#1879022</a> to CHANGELOG.txt.</li>
+  <li><a href="/node/1879022">#1879022</a> by omegamonk: Fixed Enforced dependencies errors updating to recent versions of Drupal 7.</li>
+  <li>Minor wording change in CHANGELOG.txt.</li>
+  <li>Add note to CHANGELOG.txt pointing to the change notification for the _field_info_collate_fields() memory usage commit.</li>
+  <li><a href="/node/1040790">#1040790</a> by yched, swentel, geerlingguy, justin.randell, Berdir | catch: Fixed _field_info_collate_fields() memory usage.</li>
+  <li>Adding version numbers</li>
+  <li><a href="/node/1893530">#1893530</a> by alippai: Document that bundles element is not required for one-bundle entities in hook_entity_info</li>
+  <li><a href="/node/1894850">#1894850</a> by ben.bunk: Fix typo in code example in drupal_prerender_links docs</li>
+  <li><a href="/node/1875858">#1875858</a> by j.slemmer, cck: Fix documentation for a couple of menu hooks</li>
+  <li>Merge branch '7.18-security' into 7.x</li>
+  <li><a href="/node/1317628">#1317628</a> by Albert Volkman, Gaelan, disasm, mjonesdinero, xjm: Clean up API docs for include files n-z</li>
+  <li><a href="/node/1888454">#1888454</a> by kiamlaluno: Remove irrelevant information from form_process_vertical_tabs() documentation</li>
+  <li><a href="/node/1807556">#1807556</a> by Albert Volkman, Lars Toomre: API docs fixup for Aggregator module</li>
+  <li><a href="/node/1807688">#1807688</a> by Albert Volkman, Lars Toomre: API docs fixes for Book module</li>
+  <li><a href="/node/1156576">#1156576</a> by pixelite, Ryan Weal, jhodgdon, plach, Albert Volkman: Better documentation for language negotiation</li>
+  <li><a href="/node/1851788">#1851788</a> by cck, blake.thompson: Add docs for hook_menu for expanded property</li>
+  <li><a href="/node/1870612">#1870612</a> by David_Rothstein, plach, greggles: Add tests for SA-CORE-2012-004 - Drupal core - Arbitrary code execution via file upload.</li>
+  <li><a href="/node/1565322">#1565322</a> by Jorrit: Fixed Notice in locale_languages_edit_form_validate().</li>
+  <li><a href="/node/1857956">#1857956</a> by catch, David_Rothstein: Do not re-prepare comment update timestamp if it's the same as the created timestamp (performance improvement).</li>
+  <li><a href="/node/1815930">#1815930</a> by slashrsm, gbrands, amontero: Fixed Update watchdog message in file_unmanaged_copy() with correct string/variable replacement values.</li>
+  <li><a href="/node/1143460">#1143460</a> by WorldFallz, Dave Reid, colette, typhonius, David_Rothstein | localhost: Fixed hook_file_download_access_alter() missing entity argument (by allowing an additional context argument to be passed to drupal_alter()).</li>
+  <li><a href="/node/1862198">#1862198</a> by plopesc: Make it clearer where to find placeholder docs for t</li>
+  <li><a href="/node/1873608">#1873608</a> by David_Rothstein: Clarify documentation on when to use t vs format_string</li>
+  <li><a href="/node/1333400">#1333400</a> by Albert Volkman, Chi: Add parameter docs for hook_install_tasks</li>
+  <li>Add link to change notification for comment field language fix to CHANGELOG.txt.</li>
+  <li><a href="/node/1864216">#1864216</a> by larowlan, marvin_B8: Fixed No docblock for several functions in user.module.</li>
+  <li><a href="/node/1864360">#1864360</a> by oadaeh: Fixed Clean up some inconsistencies with @link...@endlink.</li>
+  <li><a href="/node/1864188">#1864188</a> by johnshortess | hefox: Fixed user_filters() invokes hook_permission() with argument 'permission' ($function('permission')).</li>
+  <li><a href="/node/1741386">#1741386</a> by lazysoundsystem, rasmusluckow, andypost, Lars Toomre, dcam: Removing t() from asserts in simpletests in book module.</li>
+  <li><a href="/node/1534674">#1534674</a> by plach, slowflyer: Fixed Comment field language is completely broken.</li>
+  <li><a href="/node/1874342">#1874342</a> by erikwebb: Fixed Undefined constant STEAM_WRAPPERS_LOCAL used in file_get_stream_wrappers() documentation.</li>
+  <li><a href="/node/1873608">#1873608</a> by David_Rothstein: Improve documentation of format_string() to emphasize that it is used to prepare variables for HTML display.</li>
+  <li><a href="/node/1854620">#1854620</a> by marvin_B8, droplet: Fixed hook_menu_local_tasks_alter() help texts.</li>
+  <li><a href="/node/1629994">#1629994</a> by Aron Novak, oadaeh, yurtboy, jhodgdon, kingandy: Fixed Mail functions reference obsolete RFC.</li>
+  <li><a href="/node/1606946">#1606946</a> follow-up by David_Rothstein: Remove note about const from D7 docs since we don't require PHP 5.3.</li>
+  <li><a href="/node/1868206">#1868206</a> by kiamlaluno: Fixed Word is repeated.</li>
+  <li>Merge branch '7.17-security' into 7.x</li>
+  <li><a href="/node/1847382">#1847382</a> by thehong, pingwin4eg, 63reasons: Fixed Undefined index: access in includes/menu.inc (when custom access_callback() does not exist or does not get included).</li>
+  <li><a href="/node/1706878">#1706878</a> by tim.plunkett, lazysoundsystem: Added DrupalWebTestCase::assertThemeOutput() to allow modules to test theme function output.</li>
+  <li><a href="/node/1446650">#1446650</a> by superspring | drupalsven: Added After installing module display link to 'install another module'.</li>
+  <li><a href="/node/1727430">#1727430</a> by tedbow, webchick, fubhy | amontero: Added 'exclusive' flag to install profiles to auto-select them during installation.</li>
+  <li><a href="/node/843114">#843114</a> by sun, quicksketch, Berdir | c960657: Fixed DatabaseConnection::__construct() and DatabaseConnection_mysql()::__construct() leaks $this (Too many connections).</li>
+  <li><a href="/node/1117780">#1117780</a> by amontero, naxoc | ogi: Display cron url in admin/config/system/cron page.</li>
+  <li><a href="/node/1494676">#1494676</a> by Liam Morland, cam8001: Removed unused variable $http_protocol in drupal_settings_initialize().</li>
+  <li><a href="/node/1672694">#1672694</a> by Devin Carlson, JulienD, jibran, kalabro: Fixed Field UI continues to use t() for $instance['label'] in field_ui().admin.inc.</li>
+  <li><a href="/node/1550892">#1550892</a> by david.mckay | fgm: Fixed reset() on function call in image_update_7002() to avoid an E_STRICT notice.</li>
+  <li><a href="/node/1833028">#1833028</a> by michaelmol | rmfleet: Fixed bug which prevented image styles from being reverted on PHP 5.4.</li>
+  <li><a href="/node/1817680">#1817680</a> by haydeniv | netol: Fixed Update notification is printed more than one time.</li>
+  <li><a href="/node/1733476">#1733476</a> by greggles, BMDan: Fixed Make default htaccess rules protocol sensitive to avoid man-in-the-middle-attacks if users don't fully customize the rule.</li>
+  <li><a href="/node/1851886">#1851886</a> by Albert Volkman: Fix up documentation for cache_set() function</li>
+  <li><a href="/node/1247812">#1247812</a> by Albert Volkman, jzacsh: Add docs for user_admin() function</li>
+  <li><a href="/node/1853050">#1853050</a> by Jerenus: Fix up docs for drupal_send_headers()</li>
+  <li><a href="/node/1857984">#1857984</a> by Ivan Zugec: Fix sample code for hook_field_widget_form so it would actually work</li>
+  <li><a href="/node/1858508">#1858508</a> by TravisCarden: Add see also to hook_theme docs</li>
+  <li><a href="/node/1856142">#1856142</a> by kiamlaluno: Fix typo in node_query_node_access_alter() comment</li>
+  <li><a href="/node/1606946">#1606946</a> by Albert Volkman: Fix grammar in docs in update.php</li>
+  <li><a href="/node/1853574">#1853574</a> by Albert Volkman: Fix spelling error in drupal_mail_system() docs</li>
+  <li><a href="/node/1787876">#1787876</a> by Albert Volkman, cirage, BrockBoland: Add return docs for drupal_get_token() function</li>
+  <li><a href="/node/1606946">#1606946</a> by Albert Volkman, udaksh, bunthorne: Fix up API docs for top-level PHP files</li>
+  <li><a href="/node/1851538">#1851538</a> by willkaxu: Fix docs typo in cache.inc</li>
+  <li><a href="/node/1313980">#1313980</a> by Albert Volkman, Lars Toomre, jn2, xjm, jhodgdon: Clean up API docs for Node module</li>
+  <li><a href="/node/1846510">#1846510</a> by Tor Arne Thune: Remove duplicate that in code comment</li>
+  <li><a href="/node/1846510">#1846510</a> by larowlan, kim.pepper: Fix spelling error in field UI module comment</li>
+  <li><a href="/node/1848516">#1848516</a> by IshaDakota: Fix coding style in hook_schema() example function body</li>
+  <li><a href="/node/1423090">#1423090</a> by Albert Volkman: Fix invalid function see reference in field.module</li>
+  <li>Also delete search_api_solr_service_class on disable</li>
+  <li><a href="/node/1837840">#1837840</a> by amontero, tstoeckler: Add clarification to l() docs as to when to use t() instead</li>
+  <li>Update to Drupal 7.17, a maintenance release with numerous bug fixes (no security fixes). Also included is a fix to DROPS-7 to remove notices in image_get_info(). More information on Drupal 7.17: http://drupal.org/drupal-7.17.</li>
+  <li>Updating Panopoly Demo to 7.x-1.0-rc3. Check out the release notes - http://drupal.org/node/1838572</li>
+  <li>Quick update to a couple notices popping up during installation.</li>
+  <li>Updating to Panopoly Release Candidate 3. Check out the release notes for upgrade instructions and a list of changes - http://drupal.org/node/1838074</li>
+  <li><a href="/node/1326600">#1326600</a> by dcam, Lars Toomre, batigolix, kid_icarus, xjm: Clean up API docs for dblog module</li>
+  <li><a href="/node/1492378">#1492378</a> by kbasarab: follow-up docs correction on autocomplete paths</li>
+  <li><a href="/node/1831408">#1831408</a> by kotnik: Fix spelling of entity in docs</li>
+  <li><a href="/node/1829366">#1829366</a> by gcassie: Fix up grammar and caps in default settings.php file</li>
+  <li>Add extra blank line to CHANGELOG.txt.</li>
+  <li>Updating to Panopoly Release Candidate 2. Check out the release notes for upgrade instructions and a list of changes - http://drupal.org/node/1828400</li>
+  <li>Updating to Panopoly Release Candidate 1. Check out the release notes for upgrade instructions and a list of changes - http://drupal.org/node/1818206.</li>
+  <li>Updating to Panopoly Beta 6. Check out the release notes for upgrade instructions and a list of changes - http://drupal.org/node/1793812.</li>
+  <li>Adding UPGRADE.txt file to Panopoly. Quick error handling update to Apps.module.</li>
+  <li>This is the fifth beta release of Panopoly!</li>
+  <li>Adding all Panopoly Apps to DROPS repository for magical updatability</li>
+  <li><a href="/node/1468686">#1468686</a> and 1400256 for better handling of files and fields during installation</li>
+  <li>Updating Panopoly to Beta 4. Check out full release notes here: http://drupal.org/node/1650828</li>
+  <li>Quick addition of a bracket for completeness sake</li>
+  <li>Additional Notice Fixing to Make Panopoly Perfect</li>
+  <li>Moving Panopoly Modules to Profile Directory</li>
+  <li><a href="/node/1558548">#1558548</a> from tim.plunkett to resolve notice in Drupal 7.14</li>
+  <li><a href="/node/985814">#985814</a> - Fix to Actions Logic to Prevent Notice During Install and Otherwise</li>
+  <li>Updates to Modules and Libraries for Panopoly Beta 3</li>
+  <li>Updating to Panopoly Beta 3 with Many Magical Updates and Improvements</li>
+  <li>Removing Panopoly Search from the Default Options</li>
+  <li>Merge branch 'master' of github.com:pantheon-systems/drops-7</li>
+  <li>Adding in demo content app to show off Panopoly functionality</li>
+  <li>Adding calendar patch to prevent installation errors.</li>
+  <li>Switching image link in apps enabled install task to not rely on openacademy.profile</li>
+  <li>Updating Panopoly Icon to Correct Filename</li>
+  <li>Moving libraries to a more standard location to avoid errors with Search API module</li>
+  <li>Initial commit of Panopoly for 7.x-1.0-alpha1</li>
+</ul>

@@ -1,0 +1,940 @@
+ d1b7730c9dcdb34ef87be2797a08290eda25d87d, %ad
+-----------------------------------------------
+- Update to Panopoly 1.5. Check out release notes for upgrade instructions and release notes: https://drupal.org/node/2255133.
+- Update to Panopoly 1.4 and Drupal 7.27. Check out the release notes for upgrade instructions and a list of changes.   Panopoly 1.4: https://drupal.org/node/2248645   Drupal 7.27: https://drupal.org/drupal-7.27-release-notes.
+- Updating to Panopoly 1.4 and Drupal 7.27 Check out the release notes for upgrade instructions and a list of changes. Panopoly 1.4:  https://drupal.org/node/2248645 Drupal 7.27: https://drupal.org/drupal-7.27-release-notes.
+- Update to Drupal 7.27. Check out the release notes for upgrade instructions and a list of changes - https://drupal.org/drupal-7.27-release-notes.
+- Upgrade to Panopoly 1.4. Check out the release notes for upgrade instructions and a list of changes - https://drupal.org/node/2248645.
+- Add function_exists for bulk_file_delete to prevent errors in local development environments.
+- Fix Behat test on Travis-CI that started failing because of a Symfony regression. Fixes JIRA WEBSPARK-159. Authored by John Carroll. Related: https://travis-ci.org/ASU/webspark-drops-drupal7.
+- Theme: Fixes Notice: undefined index: mlid in asu_webspark_bootstrap_links__system_main_menu line 234. Fixes WEBSPARK-136. Authored by Mike Pirog.
+- Drupal 7.27 release.
+- Drupal 7.27.
+- Merge pull request #37 from pantheon-systems/bulkfiledelete.
+- Pinned Symfony to ver.2.4.2. Fixes JIRA WEBSPARK-159.
+- Remove calls to pantheon_api_load_api, which only loads now deprecated functions.
+- Call pantheon.php's pantheon_bulk_file_delete rather than drops-7 pantheon_api_bulk_file_delete.
+- WEBSPARK-130: Testing upgrade to Panopoly 1.2.
+- Merge pull request #7 from ASU/86-implement-continuous-integration.
+- Implement Continuous Integration. Fixes WEBSPARK-86.
+- Merge pull request #5 from kjwaddel/news2.
+- Merge pull request #3 from kjwaddel/121.
+- Merge pull request #6 from ASU/14-transfer-repos.
+- Updating make file to point to new repo locations.
+- Updating content to use wysiwyg and removing dependency on menu.
+- WEBSPARK-129: Notice: Undefined offset: 0 in asu_webspark_bootstrap_links__system_main_menu().
+- WEBSPARK-127: First word site title styling improperly applied.
+- WEBSPARK-128: Enable and disable logic for header image and frontpage path.
+- #ajax does not work in install profiles.
+- WEBSPARK-90: Set new ASU header on updates.
+- Merge branch 'master' of https://github.com/pantheon-systems/drops-7.
+- Adding webform module and editing .make file to include it in site spinup. Webspark-121.
+- ASU Webspark RC3.
+- Merge pull request #5 from populist/remove-duplicate-panopoly.
+- Removing the Panopoly Profile. Not necessary with WebSpark building same modules.
+- Drupal 7.26 - a security update recommended for all sites. Please see https://drupal.org/SA-CORE-2014-001 for details.
+- Drupal 7.26.
+- Merge pull request #35 from pantheon-systems/7-25.
+- Avoid permission conflicts in SFTP mode when checking site status.
+- Drupal 7.25 release, a maintenance release recommended for all sites. https://drupal.org/drupal-7.25-release-notes.
+- Drupal 7.25.
+- Fix broken function docblock in system.install.
+- Grammar consistency fix in CHANGELOG.txt.
+- Add standard information to CHANGELOG.txt in preparation for Drupal 7.25.
+- Added link to the change notification for the new Statistics module feature from issue #1209532.
+- Document that caches should be cleared after calling field_attach_update().
+- Node_type_form_validate() and node_type_form_submit() pointlessly trim machine name value.
+- Code style fixes for includes/filetransfer.
+- Namespaced Drupal\node\Node entity in node_revision_list() doc comment rather than node.
+- Node_access integrity constraint violation on module_invoke_all('node_' . $op, $node);.
+- Hide vulnerable drupal install.php sites from search engines.
+- Cache the query in menu_local_tasks().
+- Remove checkbox spacing.
+- DEADLOCK errors on MergeQuery INSERT due to InnoDB gap locking when condition in SELECT ... FOR UPDATE results in 0 rows.
+- Drupal_environment_initialize() passes wrong ini_set parameter.
+- Clean up CommentTestBase::setCommentSettings().
+- Useless require_once file in st().
+- Block rehashing happens on every cron run.
+- Provide a way to avoid processing a queue during cron execution.
+- Hook_block_view_MODULE_DELTA_alter fails with blocks that have a hyphen in the block delta.
+- Drupal_serve_page_from_cache can serve uncompressed data with Content-Encoding gzip header with page_cache_without_database = 1.
+- Broken Tests on PHP 5.5.
+- States.js is not compatible with jquery +1.6.1 because it use $.attr in the wrong way.
+- Fix errors running unit tests in Drupal 7 when the Locale module is enabled.
+- File_field_presave assumes that a file object has been loaded.
+- Some callbacks return junk when calling drupal_not_found(); replace with return MENU_NOT_FOUND instead.
+- Theme_status_report() uses an integer instead of a constant.
+- Node deletion should clear page cache.
+- Fix code format in user.module.
+- Drupal_load_stylesheet() fails to load @import files in different directories.
+- Remove issue #1289336 from CHANGELOG.txt for now, since it was causing test failures.
+- Revert "Issue #1289336 by jthorson, JimmyAx, marcingy, no_commit_credit, rooby | janipuni: Calling node_view for the same node with multiple view modes on the same page does not correctly attach fields.".
+- PRE tags (and other similar tags) have unreadable small font-size in Bartik.
+- E-mails contain double spaces in soft-wrapped sentences.
+- Strict warning: Only variables should be passed by reference in update_results_page().
+- Add issue #1289336 to CHANGELOG.txt.
+- Calling node_view for the same node with multiple view modes on the same page does not correctly attach fields.
+- Undefined property: stdClass::$visibility in profile_view_field().
+- SearchExcerptTestCase should be a DrupalWebTestCase.
+- Search query extender should not use floats directly.
+- Return same derivative token with path or URI.
+- TestMenuTreeData() assert message confuses dashes and underscores.
+- Count node views via AJAX in the statistics module.
+- Node.language column should have an index.
+- Image style editing leads to redundant watchdog entries.
+- Add static caching to drupal_html_class().
+- User_login_name_validate() uses isset() where other user login form validation handlers use !empty().
+- Titles are often double-escaped (including in the content attribute of the dc:title meta element for nodes).
+- CSS is truncated when aggregation is turned on.
+- Drupal_wrap_mail() strips trailing blanks from standard hyphen-hyphen-space-newline e-mail signature separator.
+- PHP Filter has a broken link to "Example PHP snippets" within help.
+- Drupal_http_request does not handle basic auth correctly when dealing with blank passwords.
+- Standard install profile sets a pointless $vocabulary->help.
+- Add link to cron tutorial on drupal.org.
+- Add a variable to allow the anonymous user object to not be a stdClass and to work around the fact that anonymous user properties are hardcoded.
+- INSERT INTO table SELECT * FROM ... not supported.
+- Change the database schema to allow Drupal core to manage files larger than 4 GB.
+- Added issue #2066275 to CHANGELOG.txt.
+- Fix docs for user_block_user_action() function.
+- ASU Webspark RC2.
+- Merge pull request #34 from pantheon-systems/drush-status.
+- Update to 7.24 to correct a system status check for both web and CLI contexts.
+- Remove mention of drupal_session_count() from inline documentation.
+- Update to Pantheon Apache Solr Integration.
+- Fix spelling errors in D7 tests and comments.
+- Merged in Update to Drupal 7.24. Pantheon Apache Solr Improvements.
+- Update to 7.24 to correct a system status check.
+- Drupa 7.24 release, a security release recommended for all sites. https://drupal.org/drupal-7.24-release-notes.
+- Drupal 7.24 - https://drupal.org/drupal-7.24-release-notes This is a security update. We recommend applying it as soon as feasible.
+- Merge tag '7.24' into 7.x.
+- Drupal 7.24.
+- Fix HTML formatting in drupal_add_js docs.
+- Fix documentation for user_pass_rehash and related functions.
+- Fix docs for file_copy.
+- OpenASU 1.0 RC 1 Release.
+- Fix docs for user_page() function.
+- Fix up documentation for system_settings_form().
+- Make sure hook_field_info tells you there are other needed hooks.
+- Fix search-result.tpl.php docs.
+- Clarify docs for hook_field_schema().
+- Remove innacurate line in stream wrapper class docs.
+- Merge pull request #33 from pantheon-systems/apachesolr_host.
+- Moving solr index server host parameter into a global.
+- Fixed Strict warning: Creating default object from empty value in template_preprocess_profile_listing().
+- Merge pull request #32 from pantheon-systems/indexserver_connection.
+- Re-enable verifypeer.
+- Skip verifying the peer.
+- Adding environment variables to set the index server connection information.
+- Improve usability & functionality of Pantheon Apache Solr module, including status and debugging.
+- Update cpyright date.
+- Replace US-centric php.net URLs with language-neutral URLs.
+- Do not confuse hook_cron_queue_info with hook_cron in docs.
+- Add Percona to list of supported MySQL-like databases.
+- OpenASU 1.0 Beta 2 Release.
+- Make docs for language API callbacks match the code.
+- Fixed file_field_load() overwites any field item properties with file entity properties.
+- OpenASU 1.0 Beta 1 Release.
+- Fix punctuation in field_view_field() docs.
+- Document system_requirements as implementation of hook_requirements.
+- Add missing ampersand in sample hook_dashboard_regions_alter function body.
+- Clean up the docs for hook_schema.
+- Clarify documentation of hook_block_view around empty return values.
+- Fix documentation of block view alter hooks.
+- Remove t() from test assertion messages in dashboard module.
+- Remove t() from test assertion messages in blog module.
+- Remove t() from test assertion messages in profile module.
+- Remove t() from test assertion messages in trigger module.
+- Drupal 7.23 release. You need to explicitly clear caches in the Drupal admin UI after applying.
+- Merge tag '7.23' of http://git.drupal.org/project/drupal into 7.23.
+- Back to 7.x-dev.
+- Drupal 7.23.
+- Fix up documentation of cache clear function and method.
+- Restore t() on button name in locale test.
+- Add standard information to CHANGELOG.txt in preparation for Drupal 7.23.
+- Added link to image style label change notification to CHANGELOG.txt.
+- Remove t() from assertion messages in tests for the locale module.
+- Drupal_realpath() should describe when it should be used.
+- Fixed tense in CHANGELOG.txt.
+- Fixed taxonomy_update_7005 on pgsql returns error 'column 'td' of relation 'taxonomy_update_7005' does not exist'.
+- Fixed CSS files order is incorrect in RTL.
+- Fixed Color module doesn't test for unlimited memory.
+- Fixed Favicon.ico 404s on IIS.
+- Fixed Different default values for filter_allowed_protocols() variable.
+- Fixed Wrong default value for 'user_pictures' variable.
+- Fixed system_update_7013() and user_update_7002() should not call l().
+- Use a single cache_get_multiple() call per region instead of a cache_get() per block in _block_render_blocks().
+- Fixed module_implements_write_cache() should not drop caches when requesting with POST method.
+- Fixed TruncateQuery implemented as 'DELETE FROM' in MySQL and SQLite, but not PostgreSQL, causing nefarious table locking.
+- Fixed Two nested contextual links regions are active, when the outer region is hovered.
+- Fixed Search block template: Undefined index: #type.
+- Fixed Image styles don't flush for images stored non-default schemes.
+- Fixed User registration form field displays when user field is locked accompanied by error message.
+- Fixed line indent in dashboard.js.
+- Fixed Trigger content (node) actions test assumes auto-increment increment of 1.
+- Fixed Taxonomy vocabulary interface test assumes auto-increment increment of 1.
+- Fixed User Account Links Tests assumes certain menu link IDs.
+- Fixed drupal_render() should always return a string.
+- Fixed cache_clear_all()('*', 'block', TRUE); will TRUNCATE the {block} table without additional checks.
+- Support HTTP Authorization in CGI environments.
+- Remove __construct() from interfaces definition.
+- Usability: if a user has just failed a login, default their username on password reset.
+- Fixed theme_table() outputs the 'no_striping' option as an HTML attribute.
+- Second attempt to fix broken ajax_html_ids for forms with file element (encoding=multipart/form-data).
+- Fixed Field schema foreign keys support is broken.
+- Fixed Syslog configure link missing on Extend/Modules page.
+- Clean up variables to remove legacy search_api_solr variables.
+- Use a variable to store the search_api_solr service class which defaults to the Pantheon service class.
+- Document that theme() should really be called via drupal_render().
+- Fixed 'No active batch' error after user cancelling own account.
+- Fix up hook_exit() docs accuracy.
+- Add description to 'access content overview' permission.
+- OpenASU 1.0 Alpha 8 Release.
+- Fix grammar in bootstrap.inc docs.
+- OpenASU 1.0 Alpha 7 Release.
+- Fix first line docs for drupal_goto().
+- Remove t() from test asserts in various system tests.
+- Remove t() from test assertions in various system tests.
+- Fix typo in field.api.php API docs.
+- Convert hook_filter_info docs to use new callback function standard.
+- Fix up grammar and awkward parens in API docs in menu.inc.
+- Remove t() from test assertions in file-related tests.
+- Remove extra spaces in field.install.
+- Add a recursive version of array_diff_assoc().
+- Added human readable labels to image styles.
+- Remove t() from test assertions in forum module.
+- Rewrite examples for taxonomy hooks in taxonomy.api.php.
+- Remove t() from test assertions in help module.
+- Remove t() from test messages in search module.
+- Fix up documentation of node tests.
+- Remove t() from test assertions in path module.
+- Remove t() from test assertions in shortcut module.
+- Remove t() from test assertions in translation module.
+- Remove t() from test assertions in menu module.
+- Trivial Patch of the Month candidate: Fix indefinite article in book.module documentation.
+- Move search callback function out of hooks group and into callbacks group in search.api.php.
+- Make documentation for table sorting match what the code does.
+- Remove t() from test assertions in node.module tests.
+- Add section tags to theme, hook_menu, and t documentation.
+- Remove stray text in callbacks topic docblock.
+- Revert "Issue #1956914 by chaby, pounard: Use a single cache_get_multiple() call per region instead of a cache_get() per block in _block_render_blocks().".
+- Added code comment to clarify why the "autocomplete" attribute is used on the current password field on the user form.
+- Fixed fallback in drupal_get_hash_salt(), move it to bootstrap.inc, use instead of $GLOBALS['drupal_hash_salt()'].
+- Use a single cache_get_multiple() call per region instead of a cache_get() per block in _block_render_blocks().
+- Remove t() from test asserts in Tracker module.
+- Remove t() from test assertions in PHP module.
+- Remove t() from test assertions in Update module.
+- Document hook_search_info() callback using new callback definition standard.
+- Remove t() from test asserts in various system tests.
+- Support for Search API Solr 1.0.
+- Fix inaccurate text in documentation for drupal_uninstall_modules.
+- Fix code comment in drupal_retrieve_form.
+- Improve documentation of drupal_uninstall_modules.
+- Fix bullet list formatting in hook_install_tasks doc.
+- Add param docs to user_login_finalize.
+- Remove t() from test asserts in misc system tests.
+- Remove t() from test asserts in misc system tests.
+- Remove t() from test asserts in misc system tests.
+- Remove t() from test asserts in form system tests.
+- Remove t() from test asserts in file system tests.
+- Remove t() from test asserts in entity system tests.
+- Remove t() from test asserts in locale and path module backported from D8 language module.
+- Remove t() from test asserts in contact module.
+- Remove t() from test asserts in field module.
+- Remove t() from test asserts in filter module.
+- Remove t() from test asserts in image module.
+- Add information on passing args by reference to module_invoke functions doc.
+- Fix up docs for field_update_instance().
+- Remove t() from assert messages in xmlrpc module.
+- Remove t() from assert messages in field_ui module.
+- Remove t() from assert messages in user module.
+- Remove t() from assert messages in dblog module.
+- Added issue #1962780 to CHANGELOG.txt.
+- Add example to field_info_field_map return docs.
+- Merge branch 'master' of git://github.com/populist/panopoly-drops-7.
+- Updating to Panopoly Release Candidate 4. Check out the release notes for upgrade instructions and a list of changes - http://drupal.org/node/1976726.
+- Merge branch 'master' of git://github.com/pantheon-systems/drops-7.
+- Merge pull request #22 from fluxsauce/master.
+- Remove documentation of visible in hook_field_extra_fields, since it does not exist (yet) in D7.
+- Updating pantheon_apachesolr to report index size, implement getSolrVersion.
+- Upate reference to Drupal 6 hook in user_login_finalize.
+- Added change notification for issue #1727430 to the Drupal 7.22 section in CHANGELOG.txt.
+- Add hook_schema_alter to scheamapi topic.
+- Fix docs typo in field_ui.admin.inc.
+- Add documentation to hook_field_extra_fields.
+- Add example implementations for file hook documentation.
+- Fix typo in code comment.
+- Add topic for callback functions.
+- Fix args in hook_aggregator_process_info docs.
+- Fix see reference to nonexistent function.
+- Add missing docs in locale test method.
+- Fixed 500 Internal server error on Apache 1.x servers after updating to Drupal 7.22.
+- OpenASU 1.0 Alpha 6 Release.
+- Fix incorrect reference in field_ui_field_setting_form_submit() documentation.
+- Use new standards to document entity info callback functions.
+- Fix up documentation for return value of hook_requirements.
+- Drupal version 7.22, a maintenance release recommended for all sites: http://drupal.org/drupal-7.22.
+- Return to core's way of doing image_get_info().
+- Merge branch 'master' of github.com:pantheon-systems/drops-7 into 7.22.
+- Merge branch 'master' of git://github.com/gbaudoin/drops-7 into 7.22.
+- Merge branch 'patch-1' of git://github.com/JohnAlbin/drops-7 into 7.22.
+- Merge pull request #20 from pantheon-systems/apachesolr-permissions.
+- Merge branch 'master' of github.com:pressflow/7 into 7.22.
+- Merge pull request #30 from pressflow/drupal-7.22.
+- Merge tag '7.22' of http://git.drupal.org/project/drupal into drupal-7.22.
+- Drupal 7.22.
+- Updating permissions for Pantheon Apachesolr module to not rely directly on Search module.
+- Add standard information to CHANGELOG.txt in preparation for Drupal 7.22.
+- Validate that the new $options parameter in various Field API public API functions is actually an array, to prevent conflicts with contrib modules.
+- Allow drupal_http_request() to be overridden.
+- Allow PSR-0 test classes to be used in D7.
+- Fixed Typo in drupal_add_html_head() API doc.
+- Remove t() from assertion messages in tests for the rdf module.
+- Fixed node_theme() doesn't declare the file for theme_node_admin_overview() .
+- Removed dead code in file_stream_wrapper_uri_normalize().
+- Fixed The machine name isn't updating correctly when the user selects a previous input value.
+- Fixed _form_set_class() is too aggressive in assigning the 'error' class.
+- Fixed ajax_html_ids() are broken for forms with file element (encoding=multipart/form-data).
+- Fixed Sticky Table header tables don't inherit parent table's outer width.
+- Fixed Content-Disposition header makes private files show open/save prompts, but public files show inline.
+- OpenASU 1.0 Alpha 5 Release.
+- Small wording change in CHANGELOG.txt.
+- Allow more Field API public API functions to act on a single field within an entity.
+- Add back field_attach_load() to file_field_update() under certain circumstances in Drupal 7.
+- Fixed hook_user()/hook_user_presave() documentation needs clarification on how to modify values.
+- Fix typo in CHANGELOG.txt.
+- Fixed SkipDotsRecursiveDirectoryIterator not skipping dot-files when they are the first entry.
+- Fixed seven_css_alter() does not set the type.
+- Fix URL typo in PHP module filter tips.
+- Fixed PHP notices when creating menu link '#'.
+- Added Make one-time login link watchdog more useful for auditing.
+- Fixed typo in docblock block_block_list_alter().
+- Use range() to create option list for forum block options.
+- Fixed Useless variable assignment in node_feed().
+- Fixed incorrect log message when theme() is called for a theme hook that does not exist.
+- Removed inaccurate code comment about using l() in update_helpful_links().
+- Fixed Dynamic tokens can't have spaces.
+- Fixed Uncaught TypeError: Cannot read property 'command' of undefined in ajax.js.
+- Fixed Notices in taxonomy_autocomplete().
+- Fixed Overlay overwrites existing target attribute.
+- Fixed Access denied page shown after submitting form that creates a unpublished node.
+- Fixed drupal_send_headers() ignores headers with valid but falsy values.
+- Restrict temporary files created by text editors.
+- Fixed if more than one hook_openid() implementation returns a given parameter, the resulting value is an array and request is invalid.
+- Fix code comment in system.module.
+- OpenASU 1.0 Alpha 4 Release.
+- Remove t() from test assert messages in simpletest module.
+- Remove reference to md5 in ajax code comments.
+- Fixed Update URL of change notification for '_field_info_collate_fields() memory usage'.
+- Fixed forum-rtl.css does not overide #forum div.indent from margin-left to margin-right.
+- Theme_form_element() initialize a variable that is never used.
+- Fixed Remove assignment to unused variable $export_data from book_export_html() function.
+- Fixed theme_checkbox() initialize a variable that is never used.
+- Fixed Useless node_type_get_type() call in node_validate().
+- Fixed search_view() initializes a variable that is never used.
+- Rename $user to $account in WebTestBase::drupalLogin().
+- Fixed serious documentation problem with the $name variable in taxonomy-term.tpl.php (incorrectly documented as being sanitized when in fact it is not).
+- Workaround for an issue where system update #7061 fails due to a memory leak and can't be run again.
+- Fixed D6->D7 upgrade: system_update_7007() fail.
+- Add severity index to watchdog table.
+- Fixed Make RDFa markup upward compatible with RDFa 1.1.
+- OpenASU 1.0 Alpha 3 Release.
+- Update to Drupal 7.21 - maintenance release focusing on users impacted by the image derivative changes in 7.20. For more information see:.
+- Merge branch 'drupal-7.21'.
+- Merge tag 'tags/7.21' into drupal-7.21.
+- Merge branch '7.20-hotfix' into 7.x.
+- Prepare Drupal 7.21 release.
+- Allow sites using the 'image_allow_insecure_derivatives' variable to have partial protection from the security issues fixed in Drupal 7.20.
+- OpenASU 1.0 Alpha 2 Release.
+- [Tests] Private Images visible by url.
+- Fix up documentation for image_scale().
+- Document that clickLink is case sensitive.
+- Fix up API docs for Filter module.
+- Fixed New anti-DoS measure breaks for some file URIs.
+- Fixed Workaround in UpdateQuery_sqlite() for affected rows count causes certain updates to be suppressed.
+- Fixed Unique key on date_formats().(format|type) is problematic for case insensitive collations.
+- Fixed DatabaseCondition not cloning SelectQuery value object.
+- Remove t() from asserts in database system tests.
+- Update modules/pantheon/pantheon_apachesolr/pantheon_apachesolr.info.
+- Drupal 7.20 release. This contains security fixes and should be applied by all users.
+- Fixing comment typo.
+- Add hook_js_cache_alter().
+- Merge branch 'drupal-7.20'.
+- Merge tag 'refs/tags/7.20' into drupal-7.20.
+- Merge tag '7.20' into 7.x.
+- Drupal 7.20.
+- Document what happens in drupal_get_filename() if the file is not found.
+- Document what happens in drupal_get_path if the file is not found.
+- Version numbers FTW.
+- Add information to documentation of hook_custom_theme.
+- Add and fix up documentation in image and node module files.
+- Add link in hook_theme docs to theme layer page.
+- Add issue #1879022 to CHANGELOG.txt.
+- Fixed Enforced dependencies errors updating to recent versions of Drupal 7.
+- Minor wording change in CHANGELOG.txt.
+- Add note to CHANGELOG.txt pointing to the change notification for the _field_info_collate_fields() memory usage commit.
+- Fixed _field_info_collate_fields() memory usage.
+- Adding version numbers.
+- Document that bundles element is not required for one-bundle entities in hook_entity_info.
+- Fix typo in code example in drupal_prerender_links docs.
+- Fix documentation for a couple of menu hooks.
+- Merge branch '7.18-security' into 7.x.
+- Clean up API docs for include files n-z.
+- Remove irrelevant information from form_process_vertical_tabs() documentation.
+- API docs fixup for Aggregator module.
+- API docs fixes for Book module.
+- Better documentation for language negotiation.
+- Add docs for hook_menu for expanded property.
+- Add tests for SA-CORE-2012-004 - Drupal core - Arbitrary code execution via file upload.
+- Fixed Notice in locale_languages_edit_form_validate().
+- Do not re-prepare comment update timestamp if it's the same as the created timestamp (performance improvement).
+- Fixed Update watchdog message in file_unmanaged_copy() with correct string/variable replacement values.
+- Fixed hook_file_download_access_alter() missing entity argument (by allowing an additional context argument to be passed to drupal_alter()).
+- Make it clearer where to find placeholder docs for t.
+- Clarify documentation on when to use t vs format_string.
+- Add parameter docs for hook_install_tasks.
+- Add link to change notification for comment field language fix to CHANGELOG.txt.
+- Fixed No docblock for several functions in user.module.
+- Fixed Clean up some inconsistencies with @link...@endlink.
+- Fixed user_filters() invokes hook_permission() with argument 'permission' ($function('permission')).
+- Removing t() from asserts in simpletests in book module.
+- Fixed Comment field language is completely broken.
+- Fixed Undefined constant STEAM_WRAPPERS_LOCAL used in file_get_stream_wrappers() documentation.
+- Improve documentation of format_string() to emphasize that it is used to prepare variables for HTML display.
+- Fixed hook_menu_local_tasks_alter() help texts.
+- Fixed Mail functions reference obsolete RFC.
+- Remove note about const from D7 docs since we don't require PHP 5.3.
+- Fixed Word is repeated.
+- Merge branch '7.17-security' into 7.x.
+- Fixed Undefined index: access in includes/menu.inc (when custom access_callback() does not exist or does not get included).
+- Added DrupalWebTestCase::assertThemeOutput() to allow modules to test theme function output.
+- Added After installing module display link to 'install another module'.
+- Added 'exclusive' flag to install profiles to auto-select them during installation.
+- Fixed DatabaseConnection::__construct() and DatabaseConnection_mysql()::__construct() leaks $this (Too many connections).
+- Display cron url in admin/config/system/cron page.
+- Removed unused variable $http_protocol in drupal_settings_initialize().
+- Fixed Field UI continues to use t() for $instance['label'] in field_ui().admin.inc.
+- Fixed reset() on function call in image_update_7002() to avoid an E_STRICT notice.
+- Fixed bug which prevented image styles from being reverted on PHP 5.4.
+- Fixed Update notification is printed more than one time.
+- Fixed Make default htaccess rules protocol sensitive to avoid man-in-the-middle-attacks if users don't fully customize the rule.
+- Fix up documentation for cache_set() function.
+- Add docs for user_admin() function.
+- Fix up docs for drupal_send_headers().
+- Fix sample code for hook_field_widget_form so it would actually work.
+- Add see also to hook_theme docs.
+- Fix typo in node_query_node_access_alter() comment.
+- Fix grammar in docs in update.php.
+- Fix spelling error in drupal_mail_system() docs.
+- Add return docs for drupal_get_token() function.
+- Fix up API docs for top-level PHP files.
+- Fix docs typo in cache.inc.
+- Clean up API docs for Node module.
+- Remove duplicate that in code comment.
+- Fix spelling error in field UI module comment.
+- Fix coding style in hook_schema() example function body.
+- Fix invalid function see reference in field.module.
+- Also delete search_api_solr_service_class on disable.
+- Add clarification to l() docs as to when to use t() instead.
+- Update to Drupal 7.17, a maintenance release with numerous bug fixes (no security fixes). Also included is a fix to DROPS-7 to remove notices in image_get_info(). More information on Drupal 7.17: http://drupal.org/drupal-7.17.
+- Updating Panopoly Demo to 7.x-1.0-rc3. Check out the release notes - http://drupal.org/node/1838572.
+- Quick update to a couple notices popping up during installation.
+- Updating to Panopoly Release Candidate 3. Check out the release notes for upgrade instructions and a list of changes - http://drupal.org/node/1838074.
+- Clean up API docs for dblog module.
+- Follow-up docs correction on autocomplete paths.
+- Fix spelling of entity in docs.
+- Fix up grammar and caps in default settings.php file.
+- Add extra blank line to CHANGELOG.txt.
+- Updating to Panopoly Release Candidate 2. Check out the release notes for upgrade instructions and a list of changes - http://drupal.org/node/1828400.
+- Updating to Panopoly Release Candidate 1. Check out the release notes for upgrade instructions and a list of changes - http://drupal.org/node/1818206.
+- Updating to Panopoly Beta 6. Check out the release notes for upgrade instructions and a list of changes - http://drupal.org/node/1793812.
+- Adding UPGRADE.txt file to Panopoly. Quick error handling update to Apps.module.
+- This is the fifth beta release of Panopoly!.
+- Adding all Panopoly Apps to DROPS repository for magical updatability.
+- .
+- Updating Panopoly to Beta 4. Check out full release notes here: http://drupal.org/node/1650828.
+- Quick addition of a bracket for completeness sake.
+- Additional Notice Fixing to Make Panopoly Perfect.
+- Moving Panopoly Modules to Profile Directory.
+- .
+- .
+- Updates to Modules and Libraries for Panopoly Beta 3.
+- Updating to Panopoly Beta 3 with Many Magical Updates and Improvements.
+- Removing Panopoly Search from the Default Options.
+- Merge branch 'master' of github.com:pantheon-systems/drops-7.
+- Adding in demo content app to show off Panopoly functionality.
+- Adding calendar patch to prevent installation errors.
+- Switching image link in apps enabled install task to not rely on openacademy.profile.
+- Updating Panopoly Icon to Correct Filename.
+- Moving libraries to a more standard location to avoid errors with Search API module.
+- Initial commit of Panopoly for 7.x-1.0-alpha1.
+
+ d1b7730c9dcdb34ef87be2797a08290eda25d87d, %ad
+-----------------------------------------------
+- Update to Panopoly 1.5. Check out release notes for upgrade instructions and release notes: https://drupal.org/node/2255133.
+- Update to Panopoly 1.4 and Drupal 7.27. Check out the release notes for upgrade instructions and a list of changes.   Panopoly 1.4: https://drupal.org/node/2248645   Drupal 7.27: https://drupal.org/drupal-7.27-release-notes.
+- Updating to Panopoly 1.4 and Drupal 7.27 Check out the release notes for upgrade instructions and a list of changes. Panopoly 1.4:  https://drupal.org/node/2248645 Drupal 7.27: https://drupal.org/drupal-7.27-release-notes.
+- Update to Drupal 7.27. Check out the release notes for upgrade instructions and a list of changes - https://drupal.org/drupal-7.27-release-notes.
+- Upgrade to Panopoly 1.4. Check out the release notes for upgrade instructions and a list of changes - https://drupal.org/node/2248645.
+- Add function_exists for bulk_file_delete to prevent errors in local development environments.
+- Fix Behat test on Travis-CI that started failing because of a Symfony regression. Fixes JIRA WEBSPARK-159. Authored by John Carroll. Related: https://travis-ci.org/ASU/webspark-drops-drupal7.
+- Theme: Fixes Notice: undefined index: mlid in asu_webspark_bootstrap_links__system_main_menu line 234. Fixes WEBSPARK-136. Authored by Mike Pirog.
+- Drupal 7.27 release.
+- Drupal 7.27.
+- Merge pull request #37 from pantheon-systems/bulkfiledelete.
+- Pinned Symfony to ver.2.4.2. Fixes JIRA WEBSPARK-159.
+- Remove calls to pantheon_api_load_api, which only loads now deprecated functions.
+- Call pantheon.php's pantheon_bulk_file_delete rather than drops-7 pantheon_api_bulk_file_delete.
+- WEBSPARK-130: Testing upgrade to Panopoly 1.2.
+- Merge pull request #7 from ASU/86-implement-continuous-integration.
+- Implement Continuous Integration. Fixes WEBSPARK-86.
+- Merge pull request #5 from kjwaddel/news2.
+- Merge pull request #3 from kjwaddel/121.
+- Merge pull request #6 from ASU/14-transfer-repos.
+- Updating make file to point to new repo locations.
+- Updating content to use wysiwyg and removing dependency on menu.
+- WEBSPARK-129: Notice: Undefined offset: 0 in asu_webspark_bootstrap_links__system_main_menu().
+- WEBSPARK-127: First word site title styling improperly applied.
+- WEBSPARK-128: Enable and disable logic for header image and frontpage path.
+- #ajax does not work in install profiles.
+- WEBSPARK-90: Set new ASU header on updates.
+- Merge branch 'master' of https://github.com/pantheon-systems/drops-7.
+- Adding webform module and editing .make file to include it in site spinup. Webspark-121.
+- ASU Webspark RC3.
+- Merge pull request #5 from populist/remove-duplicate-panopoly.
+- Removing the Panopoly Profile. Not necessary with WebSpark building same modules.
+- Drupal 7.26 - a security update recommended for all sites. Please see https://drupal.org/SA-CORE-2014-001 for details.
+- Drupal 7.26.
+- Merge pull request #35 from pantheon-systems/7-25.
+- Avoid permission conflicts in SFTP mode when checking site status.
+- Drupal 7.25 release, a maintenance release recommended for all sites. https://drupal.org/drupal-7.25-release-notes.
+- Drupal 7.25.
+- Fix broken function docblock in system.install.
+- Grammar consistency fix in CHANGELOG.txt.
+- Add standard information to CHANGELOG.txt in preparation for Drupal 7.25.
+- Added link to the change notification for the new Statistics module feature from issue #1209532.
+- Document that caches should be cleared after calling field_attach_update().
+- Node_type_form_validate() and node_type_form_submit() pointlessly trim machine name value.
+- Code style fixes for includes/filetransfer.
+- Namespaced Drupal\node\Node entity in node_revision_list() doc comment rather than node.
+- Node_access integrity constraint violation on module_invoke_all('node_' . $op, $node);.
+- Hide vulnerable drupal install.php sites from search engines.
+- Cache the query in menu_local_tasks().
+- Remove checkbox spacing.
+- DEADLOCK errors on MergeQuery INSERT due to InnoDB gap locking when condition in SELECT ... FOR UPDATE results in 0 rows.
+- Drupal_environment_initialize() passes wrong ini_set parameter.
+- Clean up CommentTestBase::setCommentSettings().
+- Useless require_once file in st().
+- Block rehashing happens on every cron run.
+- Provide a way to avoid processing a queue during cron execution.
+- Hook_block_view_MODULE_DELTA_alter fails with blocks that have a hyphen in the block delta.
+- Drupal_serve_page_from_cache can serve uncompressed data with Content-Encoding gzip header with page_cache_without_database = 1.
+- Broken Tests on PHP 5.5.
+- States.js is not compatible with jquery +1.6.1 because it use $.attr in the wrong way.
+- Fix errors running unit tests in Drupal 7 when the Locale module is enabled.
+- File_field_presave assumes that a file object has been loaded.
+- Some callbacks return junk when calling drupal_not_found(); replace with return MENU_NOT_FOUND instead.
+- Theme_status_report() uses an integer instead of a constant.
+- Node deletion should clear page cache.
+- Fix code format in user.module.
+- Drupal_load_stylesheet() fails to load @import files in different directories.
+- Remove issue #1289336 from CHANGELOG.txt for now, since it was causing test failures.
+- Revert "Issue #1289336 by jthorson, JimmyAx, marcingy, no_commit_credit, rooby | janipuni: Calling node_view for the same node with multiple view modes on the same page does not correctly attach fields.".
+- PRE tags (and other similar tags) have unreadable small font-size in Bartik.
+- E-mails contain double spaces in soft-wrapped sentences.
+- Strict warning: Only variables should be passed by reference in update_results_page().
+- Add issue #1289336 to CHANGELOG.txt.
+- Calling node_view for the same node with multiple view modes on the same page does not correctly attach fields.
+- Undefined property: stdClass::$visibility in profile_view_field().
+- SearchExcerptTestCase should be a DrupalWebTestCase.
+- Search query extender should not use floats directly.
+- Return same derivative token with path or URI.
+- TestMenuTreeData() assert message confuses dashes and underscores.
+- Count node views via AJAX in the statistics module.
+- Node.language column should have an index.
+- Image style editing leads to redundant watchdog entries.
+- Add static caching to drupal_html_class().
+- User_login_name_validate() uses isset() where other user login form validation handlers use !empty().
+- Titles are often double-escaped (including in the content attribute of the dc:title meta element for nodes).
+- CSS is truncated when aggregation is turned on.
+- Drupal_wrap_mail() strips trailing blanks from standard hyphen-hyphen-space-newline e-mail signature separator.
+- PHP Filter has a broken link to "Example PHP snippets" within help.
+- Drupal_http_request does not handle basic auth correctly when dealing with blank passwords.
+- Standard install profile sets a pointless $vocabulary->help.
+- Add link to cron tutorial on drupal.org.
+- Add a variable to allow the anonymous user object to not be a stdClass and to work around the fact that anonymous user properties are hardcoded.
+- INSERT INTO table SELECT * FROM ... not supported.
+- Change the database schema to allow Drupal core to manage files larger than 4 GB.
+- Added issue #2066275 to CHANGELOG.txt.
+- Fix docs for user_block_user_action() function.
+- ASU Webspark RC2.
+- Merge pull request #34 from pantheon-systems/drush-status.
+- Update to 7.24 to correct a system status check for both web and CLI contexts.
+- Remove mention of drupal_session_count() from inline documentation.
+- Update to Pantheon Apache Solr Integration.
+- Fix spelling errors in D7 tests and comments.
+- Merged in Update to Drupal 7.24. Pantheon Apache Solr Improvements.
+- Update to 7.24 to correct a system status check.
+- Drupa 7.24 release, a security release recommended for all sites. https://drupal.org/drupal-7.24-release-notes.
+- Drupal 7.24 - https://drupal.org/drupal-7.24-release-notes This is a security update. We recommend applying it as soon as feasible.
+- Merge tag '7.24' into 7.x.
+- Drupal 7.24.
+- Fix HTML formatting in drupal_add_js docs.
+- Fix documentation for user_pass_rehash and related functions.
+- Fix docs for file_copy.
+- OpenASU 1.0 RC 1 Release.
+- Fix docs for user_page() function.
+- Fix up documentation for system_settings_form().
+- Make sure hook_field_info tells you there are other needed hooks.
+- Fix search-result.tpl.php docs.
+- Clarify docs for hook_field_schema().
+- Remove innacurate line in stream wrapper class docs.
+- Merge pull request #33 from pantheon-systems/apachesolr_host.
+- Moving solr index server host parameter into a global.
+- Fixed Strict warning: Creating default object from empty value in template_preprocess_profile_listing().
+- Merge pull request #32 from pantheon-systems/indexserver_connection.
+- Re-enable verifypeer.
+- Skip verifying the peer.
+- Adding environment variables to set the index server connection information.
+- Improve usability & functionality of Pantheon Apache Solr module, including status and debugging.
+- Update cpyright date.
+- Replace US-centric php.net URLs with language-neutral URLs.
+- Do not confuse hook_cron_queue_info with hook_cron in docs.
+- Add Percona to list of supported MySQL-like databases.
+- OpenASU 1.0 Beta 2 Release.
+- Make docs for language API callbacks match the code.
+- Fixed file_field_load() overwites any field item properties with file entity properties.
+- OpenASU 1.0 Beta 1 Release.
+- Fix punctuation in field_view_field() docs.
+- Document system_requirements as implementation of hook_requirements.
+- Add missing ampersand in sample hook_dashboard_regions_alter function body.
+- Clean up the docs for hook_schema.
+- Clarify documentation of hook_block_view around empty return values.
+- Fix documentation of block view alter hooks.
+- Remove t() from test assertion messages in dashboard module.
+- Remove t() from test assertion messages in blog module.
+- Remove t() from test assertion messages in profile module.
+- Remove t() from test assertion messages in trigger module.
+- Drupal 7.23 release. You need to explicitly clear caches in the Drupal admin UI after applying.
+- Merge tag '7.23' of http://git.drupal.org/project/drupal into 7.23.
+- Back to 7.x-dev.
+- Drupal 7.23.
+- Fix up documentation of cache clear function and method.
+- Restore t() on button name in locale test.
+- Add standard information to CHANGELOG.txt in preparation for Drupal 7.23.
+- Added link to image style label change notification to CHANGELOG.txt.
+- Remove t() from assertion messages in tests for the locale module.
+- Drupal_realpath() should describe when it should be used.
+- Fixed tense in CHANGELOG.txt.
+- Fixed taxonomy_update_7005 on pgsql returns error 'column 'td' of relation 'taxonomy_update_7005' does not exist'.
+- Fixed CSS files order is incorrect in RTL.
+- Fixed Color module doesn't test for unlimited memory.
+- Fixed Favicon.ico 404s on IIS.
+- Fixed Different default values for filter_allowed_protocols() variable.
+- Fixed Wrong default value for 'user_pictures' variable.
+- Fixed system_update_7013() and user_update_7002() should not call l().
+- Use a single cache_get_multiple() call per region instead of a cache_get() per block in _block_render_blocks().
+- Fixed module_implements_write_cache() should not drop caches when requesting with POST method.
+- Fixed TruncateQuery implemented as 'DELETE FROM' in MySQL and SQLite, but not PostgreSQL, causing nefarious table locking.
+- Fixed Two nested contextual links regions are active, when the outer region is hovered.
+- Fixed Search block template: Undefined index: #type.
+- Fixed Image styles don't flush for images stored non-default schemes.
+- Fixed User registration form field displays when user field is locked accompanied by error message.
+- Fixed line indent in dashboard.js.
+- Fixed Trigger content (node) actions test assumes auto-increment increment of 1.
+- Fixed Taxonomy vocabulary interface test assumes auto-increment increment of 1.
+- Fixed User Account Links Tests assumes certain menu link IDs.
+- Fixed drupal_render() should always return a string.
+- Fixed cache_clear_all()('*', 'block', TRUE); will TRUNCATE the {block} table without additional checks.
+- Support HTTP Authorization in CGI environments.
+- Remove __construct() from interfaces definition.
+- Usability: if a user has just failed a login, default their username on password reset.
+- Fixed theme_table() outputs the 'no_striping' option as an HTML attribute.
+- Second attempt to fix broken ajax_html_ids for forms with file element (encoding=multipart/form-data).
+- Fixed Field schema foreign keys support is broken.
+- Fixed Syslog configure link missing on Extend/Modules page.
+- Clean up variables to remove legacy search_api_solr variables.
+- Use a variable to store the search_api_solr service class which defaults to the Pantheon service class.
+- Document that theme() should really be called via drupal_render().
+- Fixed 'No active batch' error after user cancelling own account.
+- Fix up hook_exit() docs accuracy.
+- Add description to 'access content overview' permission.
+- OpenASU 1.0 Alpha 8 Release.
+- Fix grammar in bootstrap.inc docs.
+- OpenASU 1.0 Alpha 7 Release.
+- Fix first line docs for drupal_goto().
+- Remove t() from test asserts in various system tests.
+- Remove t() from test assertions in various system tests.
+- Fix typo in field.api.php API docs.
+- Convert hook_filter_info docs to use new callback function standard.
+- Fix up grammar and awkward parens in API docs in menu.inc.
+- Remove t() from test assertions in file-related tests.
+- Remove extra spaces in field.install.
+- Add a recursive version of array_diff_assoc().
+- Added human readable labels to image styles.
+- Remove t() from test assertions in forum module.
+- Rewrite examples for taxonomy hooks in taxonomy.api.php.
+- Remove t() from test assertions in help module.
+- Remove t() from test messages in search module.
+- Fix up documentation of node tests.
+- Remove t() from test assertions in path module.
+- Remove t() from test assertions in shortcut module.
+- Remove t() from test assertions in translation module.
+- Remove t() from test assertions in menu module.
+- Trivial Patch of the Month candidate: Fix indefinite article in book.module documentation.
+- Move search callback function out of hooks group and into callbacks group in search.api.php.
+- Make documentation for table sorting match what the code does.
+- Remove t() from test assertions in node.module tests.
+- Add section tags to theme, hook_menu, and t documentation.
+- Remove stray text in callbacks topic docblock.
+- Revert "Issue #1956914 by chaby, pounard: Use a single cache_get_multiple() call per region instead of a cache_get() per block in _block_render_blocks().".
+- Added code comment to clarify why the "autocomplete" attribute is used on the current password field on the user form.
+- Fixed fallback in drupal_get_hash_salt(), move it to bootstrap.inc, use instead of $GLOBALS['drupal_hash_salt()'].
+- Use a single cache_get_multiple() call per region instead of a cache_get() per block in _block_render_blocks().
+- Remove t() from test asserts in Tracker module.
+- Remove t() from test assertions in PHP module.
+- Remove t() from test assertions in Update module.
+- Document hook_search_info() callback using new callback definition standard.
+- Remove t() from test asserts in various system tests.
+- Support for Search API Solr 1.0.
+- Fix inaccurate text in documentation for drupal_uninstall_modules.
+- Fix code comment in drupal_retrieve_form.
+- Improve documentation of drupal_uninstall_modules.
+- Fix bullet list formatting in hook_install_tasks doc.
+- Add param docs to user_login_finalize.
+- Remove t() from test asserts in misc system tests.
+- Remove t() from test asserts in misc system tests.
+- Remove t() from test asserts in misc system tests.
+- Remove t() from test asserts in form system tests.
+- Remove t() from test asserts in file system tests.
+- Remove t() from test asserts in entity system tests.
+- Remove t() from test asserts in locale and path module backported from D8 language module.
+- Remove t() from test asserts in contact module.
+- Remove t() from test asserts in field module.
+- Remove t() from test asserts in filter module.
+- Remove t() from test asserts in image module.
+- Add information on passing args by reference to module_invoke functions doc.
+- Fix up docs for field_update_instance().
+- Remove t() from assert messages in xmlrpc module.
+- Remove t() from assert messages in field_ui module.
+- Remove t() from assert messages in user module.
+- Remove t() from assert messages in dblog module.
+- Added issue #1962780 to CHANGELOG.txt.
+- Add example to field_info_field_map return docs.
+- Merge branch 'master' of git://github.com/populist/panopoly-drops-7.
+- Updating to Panopoly Release Candidate 4. Check out the release notes for upgrade instructions and a list of changes - http://drupal.org/node/1976726.
+- Merge branch 'master' of git://github.com/pantheon-systems/drops-7.
+- Merge pull request #22 from fluxsauce/master.
+- Remove documentation of visible in hook_field_extra_fields, since it does not exist (yet) in D7.
+- Updating pantheon_apachesolr to report index size, implement getSolrVersion.
+- Upate reference to Drupal 6 hook in user_login_finalize.
+- Added change notification for issue #1727430 to the Drupal 7.22 section in CHANGELOG.txt.
+- Add hook_schema_alter to scheamapi topic.
+- Fix docs typo in field_ui.admin.inc.
+- Add documentation to hook_field_extra_fields.
+- Add example implementations for file hook documentation.
+- Fix typo in code comment.
+- Add topic for callback functions.
+- Fix args in hook_aggregator_process_info docs.
+- Fix see reference to nonexistent function.
+- Add missing docs in locale test method.
+- Fixed 500 Internal server error on Apache 1.x servers after updating to Drupal 7.22.
+- OpenASU 1.0 Alpha 6 Release.
+- Fix incorrect reference in field_ui_field_setting_form_submit() documentation.
+- Use new standards to document entity info callback functions.
+- Fix up documentation for return value of hook_requirements.
+- Drupal version 7.22, a maintenance release recommended for all sites: http://drupal.org/drupal-7.22.
+- Return to core's way of doing image_get_info().
+- Merge branch 'master' of github.com:pantheon-systems/drops-7 into 7.22.
+- Merge branch 'master' of git://github.com/gbaudoin/drops-7 into 7.22.
+- Merge branch 'patch-1' of git://github.com/JohnAlbin/drops-7 into 7.22.
+- Merge pull request #20 from pantheon-systems/apachesolr-permissions.
+- Merge branch 'master' of github.com:pressflow/7 into 7.22.
+- Merge pull request #30 from pressflow/drupal-7.22.
+- Merge tag '7.22' of http://git.drupal.org/project/drupal into drupal-7.22.
+- Drupal 7.22.
+- Updating permissions for Pantheon Apachesolr module to not rely directly on Search module.
+- Add standard information to CHANGELOG.txt in preparation for Drupal 7.22.
+- Validate that the new $options parameter in various Field API public API functions is actually an array, to prevent conflicts with contrib modules.
+- Allow drupal_http_request() to be overridden.
+- Allow PSR-0 test classes to be used in D7.
+- Fixed Typo in drupal_add_html_head() API doc.
+- Remove t() from assertion messages in tests for the rdf module.
+- Fixed node_theme() doesn't declare the file for theme_node_admin_overview() .
+- Removed dead code in file_stream_wrapper_uri_normalize().
+- Fixed The machine name isn't updating correctly when the user selects a previous input value.
+- Fixed _form_set_class() is too aggressive in assigning the 'error' class.
+- Fixed ajax_html_ids() are broken for forms with file element (encoding=multipart/form-data).
+- Fixed Sticky Table header tables don't inherit parent table's outer width.
+- Fixed Content-Disposition header makes private files show open/save prompts, but public files show inline.
+- OpenASU 1.0 Alpha 5 Release.
+- Small wording change in CHANGELOG.txt.
+- Allow more Field API public API functions to act on a single field within an entity.
+- Add back field_attach_load() to file_field_update() under certain circumstances in Drupal 7.
+- Fixed hook_user()/hook_user_presave() documentation needs clarification on how to modify values.
+- Fix typo in CHANGELOG.txt.
+- Fixed SkipDotsRecursiveDirectoryIterator not skipping dot-files when they are the first entry.
+- Fixed seven_css_alter() does not set the type.
+- Fix URL typo in PHP module filter tips.
+- Fixed PHP notices when creating menu link '#'.
+- Added Make one-time login link watchdog more useful for auditing.
+- Fixed typo in docblock block_block_list_alter().
+- Use range() to create option list for forum block options.
+- Fixed Useless variable assignment in node_feed().
+- Fixed incorrect log message when theme() is called for a theme hook that does not exist.
+- Removed inaccurate code comment about using l() in update_helpful_links().
+- Fixed Dynamic tokens can't have spaces.
+- Fixed Uncaught TypeError: Cannot read property 'command' of undefined in ajax.js.
+- Fixed Notices in taxonomy_autocomplete().
+- Fixed Overlay overwrites existing target attribute.
+- Fixed Access denied page shown after submitting form that creates a unpublished node.
+- Fixed drupal_send_headers() ignores headers with valid but falsy values.
+- Restrict temporary files created by text editors.
+- Fixed if more than one hook_openid() implementation returns a given parameter, the resulting value is an array and request is invalid.
+- Fix code comment in system.module.
+- OpenASU 1.0 Alpha 4 Release.
+- Remove t() from test assert messages in simpletest module.
+- Remove reference to md5 in ajax code comments.
+- Fixed Update URL of change notification for '_field_info_collate_fields() memory usage'.
+- Fixed forum-rtl.css does not overide #forum div.indent from margin-left to margin-right.
+- Theme_form_element() initialize a variable that is never used.
+- Fixed Remove assignment to unused variable $export_data from book_export_html() function.
+- Fixed theme_checkbox() initialize a variable that is never used.
+- Fixed Useless node_type_get_type() call in node_validate().
+- Fixed search_view() initializes a variable that is never used.
+- Rename $user to $account in WebTestBase::drupalLogin().
+- Fixed serious documentation problem with the $name variable in taxonomy-term.tpl.php (incorrectly documented as being sanitized when in fact it is not).
+- Workaround for an issue where system update #7061 fails due to a memory leak and can't be run again.
+- Fixed D6->D7 upgrade: system_update_7007() fail.
+- Add severity index to watchdog table.
+- Fixed Make RDFa markup upward compatible with RDFa 1.1.
+- OpenASU 1.0 Alpha 3 Release.
+- Update to Drupal 7.21 - maintenance release focusing on users impacted by the image derivative changes in 7.20. For more information see:.
+- Merge branch 'drupal-7.21'.
+- Merge tag 'tags/7.21' into drupal-7.21.
+- Merge branch '7.20-hotfix' into 7.x.
+- Prepare Drupal 7.21 release.
+- Allow sites using the 'image_allow_insecure_derivatives' variable to have partial protection from the security issues fixed in Drupal 7.20.
+- OpenASU 1.0 Alpha 2 Release.
+- [Tests] Private Images visible by url.
+- Fix up documentation for image_scale().
+- Document that clickLink is case sensitive.
+- Fix up API docs for Filter module.
+- Fixed New anti-DoS measure breaks for some file URIs.
+- Fixed Workaround in UpdateQuery_sqlite() for affected rows count causes certain updates to be suppressed.
+- Fixed Unique key on date_formats().(format|type) is problematic for case insensitive collations.
+- Fixed DatabaseCondition not cloning SelectQuery value object.
+- Remove t() from asserts in database system tests.
+- Update modules/pantheon/pantheon_apachesolr/pantheon_apachesolr.info.
+- Drupal 7.20 release. This contains security fixes and should be applied by all users.
+- Fixing comment typo.
+- Add hook_js_cache_alter().
+- Merge branch 'drupal-7.20'.
+- Merge tag 'refs/tags/7.20' into drupal-7.20.
+- Merge tag '7.20' into 7.x.
+- Drupal 7.20.
+- Document what happens in drupal_get_filename() if the file is not found.
+- Document what happens in drupal_get_path if the file is not found.
+- Version numbers FTW.
+- Add information to documentation of hook_custom_theme.
+- Add and fix up documentation in image and node module files.
+- Add link in hook_theme docs to theme layer page.
+- Add issue #1879022 to CHANGELOG.txt.
+- Fixed Enforced dependencies errors updating to recent versions of Drupal 7.
+- Minor wording change in CHANGELOG.txt.
+- Add note to CHANGELOG.txt pointing to the change notification for the _field_info_collate_fields() memory usage commit.
+- Fixed _field_info_collate_fields() memory usage.
+- Adding version numbers.
+- Document that bundles element is not required for one-bundle entities in hook_entity_info.
+- Fix typo in code example in drupal_prerender_links docs.
+- Fix documentation for a couple of menu hooks.
+- Merge branch '7.18-security' into 7.x.
+- Clean up API docs for include files n-z.
+- Remove irrelevant information from form_process_vertical_tabs() documentation.
+- API docs fixup for Aggregator module.
+- API docs fixes for Book module.
+- Better documentation for language negotiation.
+- Add docs for hook_menu for expanded property.
+- Add tests for SA-CORE-2012-004 - Drupal core - Arbitrary code execution via file upload.
+- Fixed Notice in locale_languages_edit_form_validate().
+- Do not re-prepare comment update timestamp if it's the same as the created timestamp (performance improvement).
+- Fixed Update watchdog message in file_unmanaged_copy() with correct string/variable replacement values.
+- Fixed hook_file_download_access_alter() missing entity argument (by allowing an additional context argument to be passed to drupal_alter()).
+- Make it clearer where to find placeholder docs for t.
+- Clarify documentation on when to use t vs format_string.
+- Add parameter docs for hook_install_tasks.
+- Add link to change notification for comment field language fix to CHANGELOG.txt.
+- Fixed No docblock for several functions in user.module.
+- Fixed Clean up some inconsistencies with @link...@endlink.
+- Fixed user_filters() invokes hook_permission() with argument 'permission' ($function('permission')).
+- Removing t() from asserts in simpletests in book module.
+- Fixed Comment field language is completely broken.
+- Fixed Undefined constant STEAM_WRAPPERS_LOCAL used in file_get_stream_wrappers() documentation.
+- Improve documentation of format_string() to emphasize that it is used to prepare variables for HTML display.
+- Fixed hook_menu_local_tasks_alter() help texts.
+- Fixed Mail functions reference obsolete RFC.
+- Remove note about const from D7 docs since we don't require PHP 5.3.
+- Fixed Word is repeated.
+- Merge branch '7.17-security' into 7.x.
+- Fixed Undefined index: access in includes/menu.inc (when custom access_callback() does not exist or does not get included).
+- Added DrupalWebTestCase::assertThemeOutput() to allow modules to test theme function output.
+- Added After installing module display link to 'install another module'.
+- Added 'exclusive' flag to install profiles to auto-select them during installation.
+- Fixed DatabaseConnection::__construct() and DatabaseConnection_mysql()::__construct() leaks $this (Too many connections).
+- Display cron url in admin/config/system/cron page.
+- Removed unused variable $http_protocol in drupal_settings_initialize().
+- Fixed Field UI continues to use t() for $instance['label'] in field_ui().admin.inc.
+- Fixed reset() on function call in image_update_7002() to avoid an E_STRICT notice.
+- Fixed bug which prevented image styles from being reverted on PHP 5.4.
+- Fixed Update notification is printed more than one time.
+- Fixed Make default htaccess rules protocol sensitive to avoid man-in-the-middle-attacks if users don't fully customize the rule.
+- Fix up documentation for cache_set() function.
+- Add docs for user_admin() function.
+- Fix up docs for drupal_send_headers().
+- Fix sample code for hook_field_widget_form so it would actually work.
+- Add see also to hook_theme docs.
+- Fix typo in node_query_node_access_alter() comment.
+- Fix grammar in docs in update.php.
+- Fix spelling error in drupal_mail_system() docs.
+- Add return docs for drupal_get_token() function.
+- Fix up API docs for top-level PHP files.
+- Fix docs typo in cache.inc.
+- Clean up API docs for Node module.
+- Remove duplicate that in code comment.
+- Fix spelling error in field UI module comment.
+- Fix coding style in hook_schema() example function body.
+- Fix invalid function see reference in field.module.
+- Also delete search_api_solr_service_class on disable.
+- Add clarification to l() docs as to when to use t() instead.
+- Update to Drupal 7.17, a maintenance release with numerous bug fixes (no security fixes). Also included is a fix to DROPS-7 to remove notices in image_get_info(). More information on Drupal 7.17: http://drupal.org/drupal-7.17.
+- Updating Panopoly Demo to 7.x-1.0-rc3. Check out the release notes - http://drupal.org/node/1838572.
+- Quick update to a couple notices popping up during installation.
+- Updating to Panopoly Release Candidate 3. Check out the release notes for upgrade instructions and a list of changes - http://drupal.org/node/1838074.
+- Clean up API docs for dblog module.
+- Follow-up docs correction on autocomplete paths.
+- Fix spelling of entity in docs.
+- Fix up grammar and caps in default settings.php file.
+- Add extra blank line to CHANGELOG.txt.
+- Updating to Panopoly Release Candidate 2. Check out the release notes for upgrade instructions and a list of changes - http://drupal.org/node/1828400.
+- Updating to Panopoly Release Candidate 1. Check out the release notes for upgrade instructions and a list of changes - http://drupal.org/node/1818206.
+- Updating to Panopoly Beta 6. Check out the release notes for upgrade instructions and a list of changes - http://drupal.org/node/1793812.
+- Adding UPGRADE.txt file to Panopoly. Quick error handling update to Apps.module.
+- This is the fifth beta release of Panopoly!.
+- Adding all Panopoly Apps to DROPS repository for magical updatability.
+- .
+- Updating Panopoly to Beta 4. Check out full release notes here: http://drupal.org/node/1650828.
+- Quick addition of a bracket for completeness sake.
+- Additional Notice Fixing to Make Panopoly Perfect.
+- Moving Panopoly Modules to Profile Directory.
+- .
+- .
+- Updates to Modules and Libraries for Panopoly Beta 3.
+- Updating to Panopoly Beta 3 with Many Magical Updates and Improvements.
+- Removing Panopoly Search from the Default Options.
+- Merge branch 'master' of github.com:pantheon-systems/drops-7.
+- Adding in demo content app to show off Panopoly functionality.
+- Adding calendar patch to prevent installation errors.
+- Switching image link in apps enabled install task to not rely on openacademy.profile.
+- Updating Panopoly Icon to Correct Filename.
+- Moving libraries to a more standard location to avoid errors with Search API module.
+- Initial commit of Panopoly for 7.x-1.0-alpha1.
+
